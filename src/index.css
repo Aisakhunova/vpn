@@ -1238,7 +1238,7 @@ transform: rotate(-24.2deg);
 /* PLEASE */
 #steps{
 
-background: url("img/steps2.png");
+background: url("/img/steps2.png");
 position: relative;
 /* width: 1240px;
 height: 560px; */

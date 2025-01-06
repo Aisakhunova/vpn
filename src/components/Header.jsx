@@ -67,7 +67,9 @@ const Header = () => {
             </li>
             
             <li>
-              <button className="startButton header-btn for-mb nowrap">{t("header.getAccess")}</button>
+              <a className="startButton header-btn for-mb nowrap"  href="https://t.me/exeslam"
+            target="_blank"
+            rel="noopener noreferrer">{t("header.getAccess")}</a>
             </li>
           </ul>
         </div>
