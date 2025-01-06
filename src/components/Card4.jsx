@@ -88,10 +88,13 @@ const Card4 = () => {
             y: 0,
           },
         }}
-        initial={{ y: 0 }}
+        initial={{ y: 200 }}
         animate={isMobile && inView ? "hover" : {}}
         transition={{
-          duration: 0.3,
+          duration: 0.5,
+          type: "spring",
+          stiffness: 300, // Controls the "jump" intensity
+          damping: 20,
         }}
         style={styles.card4Footer}
       >

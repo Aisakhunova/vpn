@@ -1367,7 +1367,7 @@ color: #B2B2B2;
 }
 
 #privacy{
-  background: url("/img/private.png");
+  background: url("img/private.png");
   background-size: cover; /* Фон растягивается, чтобы покрыть весь элемент */
   background-position: center; /* Центрирование фона */
   background-repeat: no-repeat; /* Фон не повторяется */
