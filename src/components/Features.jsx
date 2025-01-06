@@ -11,8 +11,9 @@ import Card4 from "./Card4";
 import { useTranslation } from "react-i18next";
 
 const WhyUs = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0); // Для отслеживания текущего слайда
 
   // Проверка ширины экрана и установка состояния isMobile
   useEffect(() => {
@@ -32,14 +33,17 @@ const WhyUs = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex), // Обновляем текущий слайд
     customPaging: (i) => (
       <div
         style={{
-          backgroundColor: "white", // Белые точки
+          opacity: i === currentSlide ? "100%" : "20%", // Белая точка для текущего слайда, чёрные для остальных
+          backgroundColor: "white",
           borderRadius: "50%", // Сделаем точки круглыми
           width: "10px", // Размер точки
           height: "10px", // Размер точки
           margin: "0 5px", // Расстояние между точками
+          cursor: "pointer", // Добавляем курсор для кликабельности
         }}
       ></div>
     ),

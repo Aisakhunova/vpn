@@ -69,7 +69,7 @@ export const Steps = () => {
             className="ice-card2"
           >
             <div className="ice-chat">
-            {t("steps.chat1")} <span className="green-back">{t("steps.chat2")}</span>
+            {t("steps.chat1")} <span className="green-back2">{t("steps.chat2")}</span>
             </div>
             <a className="ice-chat2" href="https://t.me/exeslam"
             target="_blank"

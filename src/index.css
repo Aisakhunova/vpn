@@ -1,7 +1,12 @@
+html, body {
+  overflow-x: hidden; /* Запрещаем горизонтальную прокрутку */
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для body остаются прежними */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  box-sizing: border-box;
   background-color: #1C1C1C;
 }
 
@@ -210,6 +215,12 @@ html {
 .green-back{
   background-color: #17FFB2;
   border-radius: 10px;
+}
+
+.green-back2{
+  background-color: #17FFB2;
+  border-radius: 5px;
+  padding: 2px 8px;
 }
 
 .nowrap{
@@ -632,6 +643,8 @@ font-weight: 500;
     bottom: 10px;
     right: 10px;
   }
+
+ 
 
   
 }
@@ -1391,7 +1404,7 @@ text-align: center;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 margin-top: 90px;
-width: 80%;
+/* width: 80%; */
 
 }
 
@@ -1573,7 +1586,7 @@ color: #D5D5D5;
 /* Для мобильных устройств добавим отступы */
 @media (max-width: 576px) {
   /* Секция - добавляем отступы по бокам */
-  section {
+  section, header {
     padding: 20px; /* Добавляем отступы по бокам */
     box-sizing: border-box; /* Учитываем отступы в ширине */
   }
@@ -1727,3 +1740,7 @@ color: #D5D5D5;
 
 
 
+
+.slick-dots li{
+  margin: 0 !important;
+}
