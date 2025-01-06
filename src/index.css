@@ -1690,7 +1690,7 @@ color: #D5D5D5;
   }
 
   #steps {
-    background: url("src/img/steps2.png");
+    background: url("img/steps2.png");
     position: relative;
     background-color: #000000;
     border-radius: 40px;
