@@ -101,8 +101,13 @@ const Card4 = () => {
         <div className="card4-footer">{t("whyUs.max")}</div>
       </motion.div>
 
-      <div style={styles.btn} onClick={() => console.log("HOLA")}>
-        <svg
+      <a
+            style={styles.btn}
+            href="https://t.me/exeslam"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+          <svg
           width="18"
           height="16"
           viewBox="0 0 18 16"
@@ -115,8 +120,8 @@ const Card4 = () => {
             fill="white"
           />
         </svg>
-        <div style={styles.btnText}>{t("header.getAccess")}</div>
-      </div>
+            <div style={styles.btnText}>{t("header.getAccess")}</div>
+        </a>
     </motion.div>
   );
 };

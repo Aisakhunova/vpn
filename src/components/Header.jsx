@@ -72,7 +72,14 @@ const Header = () => {
           </ul>
         </div>
       </motion.nav>
-      <button className="startButton header-btn for-lg nowrap">{t("header.getAccess")}</button>
+      <a
+            className="startButton header-btn for-lg nowrap"
+            href="https://t.me/exeslam"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            {t("header.getAccess")}
+        </a>
     </motion.header>
   );
 };

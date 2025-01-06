@@ -49,7 +49,9 @@ export const Steps = () => {
             }}
             className="ice-card"
           >
-            <button className="ice-btn">{t("steps.click")}</button>
+            <a className="ice-btn" href="https://t.me/exeslam"
+            target="_blank"
+            rel="noopener noreferrer">{t("steps.click")}</a>
           </motion.div>
 
           <motion.div
@@ -69,7 +71,9 @@ export const Steps = () => {
             <div className="ice-chat">
             {t("steps.chat1")} <span className="green-back">{t("steps.chat2")}</span>
             </div>
-            <div className="ice-chat2">
+            <a className="ice-chat2" href="https://t.me/exeslam"
+            target="_blank"
+            rel="noopener noreferrer">
               <svg
                 width="9"
                 height="8"
@@ -86,7 +90,7 @@ export const Steps = () => {
                 />
               </svg>
               {t("steps.chatBtn")}
-            </div>
+            </a>
           </motion.div>
         </div>
 
@@ -130,22 +134,30 @@ export const Steps = () => {
         <img src="img/cube2.svg" alt="" />
       </motion.div>
 
-      <motion.button
-        variants={{
-          visible: { y: 0, opacity: 1 },
-          hidden: { y: 600, opacity: 0 },
-        }}
-        initial="hidden"
-        animate={isVisible ? "visible" : "hidden"}
-        transition={{
-          duration: 0.5,
-          ease: "easeInOut",
-          delay: 1,
-        }}
-        className="ice-btn2"
-      >
-        {t("header.getAccess")}
-      </motion.button>
+      <a
+            href="https://t.me/exeslam"
+            target="_blank"
+            rel="noopener noreferrer"
+            
+        >
+            <motion.button
+            className="ice-btn2"
+                variants={{
+                    visible: { y: 0, opacity: 1 },
+                    hidden: { y: 600, opacity: 0 },
+                }}
+                initial="hidden"
+                animate={isVisible ? "visible" : "hidden"}
+                transition={{
+                    duration: 0.5,
+                    ease: "easeInOut",
+                    delay: 1,
+                }}
+            >
+                {t("header.getAccess")}
+            </motion.button>
+        </a>
+    
     </motion.section>
   );
 };

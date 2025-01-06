@@ -6,7 +6,9 @@ export const Privacy = () => {
         <div id="privacy">
             <div className="privacy-title">{t("privacy.yourRules")}</div>
             <div className="privacy-text green-back">{t("privacy.noTrack")}</div>
-            <button className='header-btn privacy-button'>{t("header.getAccess")}</button>
+            <a className='header-btn privacy-button' href="https://t.me/exeslam"
+            target="_blank"
+            rel="noopener noreferrer">{t("header.getAccess")}</a>
         </div>
     )
 }

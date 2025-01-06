@@ -426,9 +426,6 @@ html {
   width: 25vw; /* Используем единицы vw для адаптивности */
 }
 
-#numbers .line-left{
-  margin-left: -10%;
-}
 
 #numbers .num {
   width: 100%;

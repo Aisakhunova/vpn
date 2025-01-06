@@ -101,7 +101,11 @@ export const Curtain = () => {
           }}
           transition={{ duration: 0.3 }}
         >
-          <p className="curtain-text">{t("curtain.iamready")}</p>
+          <a href="https://t.me/exeslam"
+            target="_blank"
+            rel="noopener noreferrer">
+          <p  className="curtain-text">{t("curtain.iamready")}</p>
+          </a>
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={isMobile && inView ? "hover" : {}}

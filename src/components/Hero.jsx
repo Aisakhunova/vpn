@@ -26,7 +26,14 @@ const Hero = () => {
           </div>
           </div>
           <div className='bottom-text'>
-            <button className='startButton st-btn'>{t("header.start")}</button>
+          <a
+            className="startButton st-btn"
+            href="https://t.me/exeslam"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            {t("header.start")}
+        </a>
 
             <div className='text-right'>
               <div className='enjoy'>{t("header.enjoy")}</div>
