@@ -9,7 +9,7 @@ const FAQ = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const faqData = t("faq.faqs", { returnObjects: true }); // Получаем массив объектов вопросов и ответов
+  const faqData = t("faq.faqs", { returnObjects: true }); 
 
   return (
     <section className="faq-section" id="faq">

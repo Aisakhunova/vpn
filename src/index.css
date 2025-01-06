@@ -1,25 +1,22 @@
 html, body {
-  overflow-x: hidden; /* Запрещаем горизонтальную прокрутку */
+  overflow-x: hidden; 
   margin: 0;
   padding: 0;
 }
 
-/* Стили для body остаются прежними */
 body {
   font-family: Arial, sans-serif;
   background-color: #1C1C1C;
 }
 
 header {
-/*   
-  padding-top: 10px; */
   width: 100%;
   z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px; /* Ограничение максимальной ширины */
-  margin: 0 auto; /* Центровка на экране */
+  max-width: 1400px; 
+  margin: 0 auto; 
   position: relative;
 }
 
@@ -48,22 +45,18 @@ header nav ul li {
 }
 
 nav ul li a:hover {
-  color:#17FFB2; /* Цвет при наведении */
+  color:#17FFB2; 
 }
 
-/* Когда ссылка активна (когда по ней нажали) */
 nav ul li a:active {
-  color: #17FFB2; /* Цвет при нажатии */
+  color: #17FFB2; 
 }
 
 .menu-icon {
-  display: none; /* Скрываем на больших экранах */
-  /* gap: 5px; */
+  display: none; 
   background-color: #17FFB2;
-padding: 3px;
-border-radius: 10px ;
-
-
+  padding: 3px;
+  border-radius: 10px;
   align-items: center;
   justify-content: center;
 }
@@ -74,99 +67,11 @@ border-radius: 10px ;
   background-color: white;
 }
 
-@media (max-width: 768px) {
-  header {
-    width: 100%;
-    /* align-items: center; */
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  nav {
-    position: absolute;
-    top: 100%; /* Расположить под хедером */
-    left: 0;
-    width: 100%; /* Занимает всю ширину экрана */
-    background-color: #1C1C1C; /* Цвет фона для контраста */
-    overflow: hidden; /* Скрываем контент, если меню закрыто */
-    transition: height 0.3s ease-in-out; /* Плавное открытие */
-    z-index: 5;
-  }
-
-  nav ul {
-    flex-direction: column; /* Меняем направление на столбец */
-    /* align-items: center; */
-    gap: 10px; /* Добавляем расстояние между элементами */
-    padding: 10px 0;
-
-    background-color: #1C1C1C;
-  }
-
-  nav ul li {
-    margin: 0; /* Убираем отступы между пунктами */
-  }
-
- 
-
-  .header-btn {
-    margin-top: 10px; /* Добавляем отступ для кнопки */
-    font-size: 18px; /* Уменьшаем размер текста кнопки */
-    padding: 8px 16px;
-  }
-
-
-  .menu-icon {
-    display: flex;
-    color: white;
-    flex-direction: column;
-    gap: 5px;
-    position: absolute; 
-    right: 20px; /* Отступ справа */
-    top: 50%; /* Выравнивание по вертикали */
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-
-  .menu-open nav ul {
-    display: flex;
-    align-items: start;
-    padding: 30px 0 50px 0;
-    /* margin: 0; */
-  }
-  .logo {
-    width: 150px; /* Размер логотипа на мобильных устройствах */
-    height: auto;
-  }
-  header .for-mb{
-    display: block;
-  }
-
-  header .for-lg{
-    display: none;
-  }
-
-  #hero .green-back{
-    background-color: transparent;
-  }
-
-  #hero .green-mob{
-    background-color: #17FFB2;
-  border-radius: 10px;
-  }
-}
-
-
 section {
-  /* height: 100vh; */
   max-width: 1400px;
   padding: auto;
   width: 100%;
   margin: 0 auto;
-  
-  /* align-items: center; */
-  /* padding: 5rem 5rem; */
-  /* background-color: red; */
 }
 
 .contact {
@@ -180,11 +85,7 @@ html {
 }
 
 .hero {
-  /* display: flex;
-  flex-direction: column; */
-  /* padding: 100px 20px; */
   width: 100%;
-
 }
 
 .description{
@@ -192,7 +93,6 @@ html {
   font-size: 26px;
   text-align: left;
 }
-
 
 .text-left{
   margin-left: 3%;
@@ -203,7 +103,6 @@ html {
   flex-grow: 1;
   padding: 60px 40px 20px 40px;
 }
-
 
 .title{
   width: 70%;
@@ -243,19 +142,17 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Обеспечим, что видео будет растягиваться по высоте */
-  object-fit: cover; /* Видео заполняет контейнер, сохраняя пропорции */
+  height: 100%; 
+  object-fit: cover; 
   background-position-y: top;
-  z-index: -10; /* Чтобы видео было позади текста */
+  z-index: -10; 
 }
-
 
 .content {
   position: relative;
-  z-index: 1; /* Поверх видео */
+  z-index: 1; 
   padding: 2rem;
 }
-
 
 .hero h1 {
   font-size: 2.5rem;
@@ -283,10 +180,8 @@ html {
   font-family: Raleway;
   display: flex;
   flex-direction: column;
-
   text-align: end;
   width: 30%;
-
 }
 
 .mTop{
@@ -305,93 +200,6 @@ html {
 .header-btn{
   font-size: 20px;
 }
-
-
-
-@media (max-width: 768px) {
-  /* .bottom-text{
-    flex-direction: column;
-    align-items: flex-start;
-  } */
-  .text-right{
-    width: 98%;
-    text-align: right;
-  }
-
-  body{
-    padding: 0;
-  }
-  /* .background-video::after {
-    content: "";
-    display: none; 
-  } */
-
-  /* .background-video {
-    height: 50vh;
-  } */
-  .title {
-    font-size: 40px; /* Динамический размер шрифта */
-    width: 100%; /* Растягиваем текст */
-  }
-
-  .description {
-    font-size: 22px; /* Уменьшенный размер текста */
-  
-  }
-  .text-left {
-    text-align: right; /* Выровнять текст по правому краю */
-    padding: 10px;
-  }
-  .bottom-text {
-    /* position: absolute; */
-    bottom: 0;
-    width: 100%;
-    text-align: right; /* Центрировать текст и кнопку */
-    flex-direction: column;
-    align-items: end;
-    text-align: start;
-    margin: 0;
-    flex-direction: column-reverse;
-  }
-
-  .enjoy{
-    width: 100%;
-    margin-top: 30%;
-    /* align-self: right; */
-    margin-bottom: 10%;
-    text-align: end;
-    display: flex;
-    justify-content: end;
-
-  }
-
-  .startButton {
-    padding: 8px 16px;
-    align-self: flex-start;
-
-  }
-  .hero-content {
-    flex-direction: column;
-    justify-content: center;
-    height: auto; /* Подстраиваем высоту */
-  }
-
-  /* .bottom-text {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  } */
-
-  .card-pale-text{
-    margin-top: 0;
-    margin-bottom: 5%;
-  }
-
-  .card-mob{
-    margin-left: 20px !important;
-  }
-}
-
 
 /* choose */
 .choose-title{
@@ -418,7 +226,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%; /* Убедимся, что контейнер занимает всю ширину */
+  width: 100%; 
   padding: 5% 0 8% 0;
   margin: 5% 0;
 }
@@ -430,13 +238,12 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
-  flex-shrink: 0; /* Не даём уменьшаться слишком сильно */
+  flex-shrink: 0; 
 }
 
 #numbers .line {
-  width: 25vw; /* Используем единицы vw для адаптивности */
+  width: 25vw;
 }
-
 
 #numbers .num {
   width: 100%;
@@ -450,8 +257,6 @@ html {
   text-align: center;
   font-family: Raleway;
   position: relative;
-
-
 }
 
 #numbers .icon {
@@ -462,50 +267,11 @@ html {
   position: absolute;
   top: 100%;
   font-size: 1.2rem;
-font-weight: 500;
-text-align: center;
-width: 90%;
-height: auto;
+  font-weight: 500;
+  text-align: center;
+  width: 90%;
+  height: auto;
 }
-
-/* Медиа-запросы для уменьшения размеров */
-@media (max-width: 768px) {
-  #numbers{
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  #numbers .line, .icon {
-    display: none;
-  }
-
-  #numbers .circle {
-    width: 90% !important;
-  }
-
-  #numbers .num{
-    width: 100%;
-  }
-
-    #numbers .text{
-      font-size: 26px !important;
-
-    }
-
-    #numbers{
-      padding-bottom: 100px;
-    }
-
-}
-
-/* @media (max-width: 480px) {
-  #numbers .line,
-  #numbers .num,
-  #numbers .icon {
-    width: 8vw;
-  }
-} */
-
 
 .card-pale-text{
   opacity: 20%;
@@ -526,16 +292,16 @@ height: auto;
 
 .card1{
   position: relative;
-    width: 100%;
-    max-width: 48%;
-    aspect-ratio: 1;
-    background-color: #111111;
-    display: flex;
-    overflow: hidden;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-bottom: 2%;
+  width: 100%;
+  max-width: 48%;
+  aspect-ratio: 1;
+  background-color: #111111;
+  display: flex;
+  overflow: hidden;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 2%;
 }
 
 .card2{
@@ -556,12 +322,11 @@ height: auto;
 
 .shieldWrapper {
   position: absolute;
-width: 60%;
-height: 90%;
-top: 35%;
-display: flex;
-
-justify-content: center;
+  width: 60%;
+  height: 90%;
+  top: 35%;
+  display: flex;
+  justify-content: center;
 }
 
 .card3 {
@@ -579,12 +344,12 @@ justify-content: center;
 }
 
 .card3-text{
-font-size: clamp(23px, 3vw, 40px);
-line-height: 1.1;
-text-align: left;
-width: 70%;
-font-family: 'Raleway';
-margin-left: 35px;
+  font-size: clamp(23px, 3vw, 40px);
+  line-height: 1.1;
+  text-align: left;
+  width: 70%;
+  font-family: 'Raleway';
+  margin-left: 35px;
 }
 
 .card4 {
@@ -601,6 +366,7 @@ margin-left: 35px;
   flex-direction: column;
   align-items: center,
 }
+
 .card4-text{
   font-family: Raleway;
   font-size: clamp(23px, 3vw, 40px);
@@ -623,39 +389,10 @@ margin-left: 35px;
   font-family: Raleway;
   font-size: "clamp(40px, 4vw, 70px)";
   line-height: 70px;
-font-weight: 500;
+  font-weight: 500;
 }
-
-@media (max-width: 576px) {
-  .card {
-    width: 100%; 
-    max-width: none;
-  }
-
-  .card3-text, .card4-text{
-    margin-left: 20px;
-  }
-
-  /* .title {
-    font-size: 20px; 
-  } */
-
-  .btn {
-    bottom: 10px;
-    right: 10px;
-  }
-
- 
-
-  
-}
-
-
-
-
 
 /* CURTAIN */
-/* Основной контейнер для центровки */
 #curtain{
   padding: 3vw 0;
 }
@@ -664,12 +401,10 @@ font-weight: 500;
   justify-content: center;
   align-items: center;
   justify-content: center;
-  /* background-color: red; */
   overflow: hidden;
   border-radius: 20px;
 }
 
-/* Окружение для основной зоны с надписью */
 .outer-container {
   position: relative;
   justify-content: center;
@@ -681,87 +416,836 @@ font-weight: 500;
   border-radius: 20px;
 }
 
-/* Текст для главной надписи */
 .main-text {
   font-family: 'Raleway';
   font-size: clamp(34px, 5vw, 60px);
-font-weight: 500;
-line-height: 1.2;
-text-align: center;
-
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
 }
 
-/* Внутренний контейнер с анимацией и зелёным фоном */
+
 .inner-container {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  background-color: #17FFB2; /* зелёный фон */
-
-  
- 
-
-
+  width: 100vw;
+  background-color: #17FFB2; 
   height: 110%;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   color: black;
   z-index: 5;
-  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .inner-container p {
-
   font-family: 'Raleway', sans-serif;
-
-    font-size: clamp(34px, 5vw, 60px);
-
+  font-size: clamp(34px, 5vw, 60px);
   font-weight: 500;
   line-height: 1.2;
   text-align: left;
   margin-right: 20px;
   color: #000;
+  width: 100%;
 }
 
 .arrow-icon {
-  width: 10vw; /* Задаем ширину как 10% от ширины экрана */
-  height: auto; /* Автоматическое сохранение пропорций */
-  max-width: 49px; /* Ограничиваем максимальный размер */
-  fill: #1c1c1c; /* Цвет заливки */
+  width: 10vw;
+  height: auto;
+  max-width: 49px; 
+  fill: #1c1c1c; 
   align-self: center;
 }
 
-/* Медиа-запросы для меньших экранов */
-@media (max-width: 768px) {
+/* ice */
+#ice {
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 80%; 
+  height: 600px; 
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  color: white;
+  max-width: 1400px;
+}
+
+.ice-title{
+  font-family: Raleway;
+  z-index: 30;
+  color: white;
+  font-size: clamp(40px, 5vw, 80px);
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left;
+  margin: 68px 0 10px 43px
+}
+
+.ice-card {
+  position: relative;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 271px;
+  height: 122px;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  border-image-slice: 1; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.ice-bubbles{
+  position: absolute;
+}
+
+.ice-btn{
+  background: #FFFFFF;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  color: #17FFB2;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+#ice {
+  position: absolute;
+  width: 1543.03px;
+  height: 1543.03px;
+  left: 252.5px;
+  top: -692.96px;
+  background: url("src/img/Gradient.png");
+  transform: rotate(24.2deg);
+}
+
+.ice2{
+  position: absolute;
+  width: 1320px;
+  height: 585px;
+  left: -20px;
+  top: -5px;
+  background: #17FFB2;
+  mix-blend-mode: hue;
+}
+
+
+.ice-cards{
+  display: flex;
+  width: 45%;
+  margin-left: 35px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards1{
+  width: 100%;
+  display: flex;
+  height: 122px;
+  justify-content: space-between;
+}
+
+.ice-card {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(17px);
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  color: white;
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.ice-bubbles{
+  position: absolute;
+}
+
+.ice-btn{
+  background: #FFFFFF;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  color: #17FFB2;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.ice-chat{
+  font-size: 20px;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-left: 35px;
+}
+
+.ice-chat2{
+  font-size: 10px;
+  line-height: 10px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.ice-card2 {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(17px);
+  border-radius: 10px; 
+  color: white;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+
+.arrow{
+  margin-right: 5px;
+}
+
+.ice-card-long{
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  background: linear-gradient(180deg, rgba(176, 176, 176, 0.15) 0%, rgba(25, 25, 25, 0.18) 100%);
+  backdrop-filter: blur(17px);
+  overflow: hidden;
+  height: 122px;
+  display: flex;
+  align-items: center;
+}
+
+.ice-long-text{
+  width: 50%;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  color: white;
+  margin-left: 35px;
+}
+
+.long-vector{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 45%;
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
+}
+
+#secIce {
+  position: relative;
+  width: 1240px;
+  height: 560px;
+  background-color: #000000; /* Резервный фон */
+  overflow: hidden; /* Скрываем выходящие части */
+  border-radius: 40px;
+}
+
+.bg-bg{
+  position: absolute;
+  width: 2039.91px;
+  height: 2039.91px;
+  left: -379.96px;
+  top: -692.96px;
+}
+
+.gr{
+  position: absolute;
+  width: 1543.03px;
+  height: 1543.03px;
+  background-image: url("src/img/Gradient.png");
+  transform: rotate(24.2deg);
+}
+
+.fade1{
+  position: absolute;
+  width: 2039.91px;
+  height: 2039.91px;
+  left: -379.96px;
+  top: -692.96px;
+}
+
+.gradient{
+  position: absolute;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 1543.03px;
+  height: 1543.03px;
+  background: url("src/img/Gradient.png");
+  transform: rotate(-24.2deg);
+}
+
+
+
+/* PLEASE */
+#steps{
+  background: url("img/steps2.png");
+  position: relative;
+  background-color: #000000; 
+  overflow: hidden; 
+  border-radius: 40px;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  padding: 0;
+}
+
+.ice-btn2{
+  margin: 20px 0 35px 35px;
+  color: #17FFB2;
+  background-color: white;
+  padding: 10px 20px;
+  gap: 10px;
+  border-radius: 100px;
+  opacity: 0px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+ 
+.card-cube{
+  display: flex;
+}
+
+.cube {
+  position: absolute;
+  width: 542.36px;
+  height: 475.33px;
+  top: 30%; 
+  left: 70%; 
+  transform: translate(-40%, -50%); 
+  opacity: 1;
+  z-index: 1; 
+}
+
+.faq-title {
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #fff;
+}
+
+.faq-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-family: Raleway;
+  font-size: 24px;
+  font-size: clamp(18px, 5vw, 24px);
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  cursor: pointer;
+  color: #fff;
+}
+
+.faqq{
+  width: 70%;
+}
+
+.faq-answer {
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #B2B2B2;
+  font-family: Raleway;
+  width: 60%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 1000px;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease-out;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg); 
+}
+
+.divider {
+  height: 1px;
+  background-color: #fff;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+#privacy{
+  background: url("img/private.png");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.privacy-title{
+  font-family: Raleway;
+  font-size: clamp(35px, 6vw, 100px);
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.privacy-text{
+  font-family: Raleway;
+  font-size: clamp(18px, 5vw, 40px);
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  padding: 10px 30px;
+  margin-top: 50px;
+}
+
+.privacy-button{
+  margin-top: 35px;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  background-color: transparent;
+  border: 2px solid #17FFB2;
+  border-radius: 100px;
+  padding: 10px 20px;
+  color: white;
+  font-family: Raleway;
+  font-size: 30px;
+}
+
+
+#footer{
+
+width: 100%;
+
+background-color: #111;
+
+}
+
+.footer-content{
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 50px 0;
+}
+
+.text-gray{
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #5B5E65;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.footer-right{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.foot-left{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+}
+
+.foot-right{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  align-items: end;
+
+}
+
+.footer-text{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #D5D5D5;
+}
+
+.text-gray2{
+  color: #5B5E65 !important;
+}
+
+.footer-text {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #D5D5D5;
+}
+
+.language-select {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #D5D5D5;
+  background-color: transparent;
+  border: none;
+  appearance: none; 
+  outline: none;
+  cursor: pointer;
+  margin: 0 5px 0 5px;
+  transition: color 0.3s ease;
+}
+
+.language-select:focus {
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.language-select option {
+  background-color: #1e1e1e;
+  color: #D5D5D5;
+}
+
+.language-select::-ms-expand {
+  display: none; 
+}
+
+.language-select-wrapper{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#whyUs{
+  align-items: start;
+}
+
+#whyUs .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 576px) {
   .arrow-icon {
-    width: 8vw; /* Уменьшаем размер стрелки */
+    width: 6vw; 
   }
 
   .arrow-icon2 {
-    width: 4vw; /* Уменьшаем размер стрелки */
+    width: 3vw;
   }
+
+  .card {
+    width: 100%; 
+    max-width: none;
+  }
+
+  .card3-text, .card4-text{
+    margin-left: 20px;
+  }
+
+  .btn {
+    bottom: 10px;
+    right: 10px;
+  } 
+
+  section, header {
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+
+  .hero, .contact, .choose-title, .ice-title {
+    padding: 20px; 
+  }
+
+  .ice-title{
+    margin: 0;
+  }
+
+  .card {
+    width: "100%" !important;  
+  }
+
+  .startButton {
+    font-size: clamp(20px, 3vw, 30px);
+    padding: 8px 16px;
+    margin: 10px 0;
+    margin-top: 30%;
+    
+  }
+
+  .hero-content {
+    flex-direction: column; 
+    border-radius: 20px;
+  }
+
+  .footer-right{
+    flex-direction: column ;
+  }
+
+  .foot-left, .foot-right{
+    align-items: center;
+    width: 100% !important;
+  }
+
+  .language-container{
+      margin-bottom: 40px;
+      margin-top: 15px;
+  }
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  width: 300px; 
+  height: auto;
+  background-color: #111;
+  color: white;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .text-right{
+    width: 98%;
+    text-align: right;
+  }
+
+  body{
+    padding: 0;
+  }
+
+  .title {
+    font-size: 40px; 
+    width: 100%; 
+  }
+
+  .description {
+    font-size: 22px; 
+  }
+
+  .text-left {
+    text-align: right; 
+    padding: 10px;
+  }
+
+  .bottom-text {
+    bottom: 0;
+    width: 100%;
+    text-align: right; 
+    flex-direction: column;
+    align-items: end;
+    text-align: start;
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+
+  .enjoy{
+    width: 100%;
+    margin-top: 30%;
+    margin-bottom: 10%;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+  }
+
+  .startButton {
+    padding: 8px 16px;
+    align-self: flex-start;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    justify-content: center;
+    height: auto; 
+  }
+
+  .card-pale-text{
+    margin-top: 0;
+    margin-bottom: 5%;
+  }
+
+  .card-mob{
+    margin-left: 20px !important;
+  }
+
+  header {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%; 
+    background-color: #1C1C1C; 
+    overflow: hidden; 
+    transition: height 0.3s ease-in-out; 
+    z-index: 5;
+  }
+
+  nav ul {
+    flex-direction: column; 
+    gap: 10px; 
+    padding: 10px 0;
+    background-color: #1C1C1C;
+  }
+
+  nav ul li {
+    margin: 0; 
+  }
+
+  .header-btn {
+    margin-top: 10px; 
+    font-size: 18px; 
+    padding: 8px 16px;
+  }
+
+  .menu-icon {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute; 
+    right: 20px; 
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .menu-open nav ul {
+    display: flex;
+    align-items: start;
+    padding: 30px 0 50px 0;
+  }
+
+  .logo {
+    width: 150px; 
+    height: auto;
+  }
+
+  header .for-mb{
+    display: block;
+  }
+
+  header .for-lg{
+    display: none;
+  }
+
+  #hero .green-back{
+    background-color: transparent;
+  }
+
+  #hero .green-mob{
+    background-color: #17FFB2;
+    border-radius: 10px;
+  }
+
+  .arrow-icon {
+    width: 8vw;
+  }
+
+  .arrow-icon2 {
+    width: 4vw; 
+  }
+
   .card1, .card2, .card3, .card4 {
     width: 90vw; 
     max-width: none;
   }
-
- 
-  
 
   .ice-title{
     width: 60%;
   }
 
   .ice-cards{
-    flex-direction: column;
-   
+    flex-direction: column; 
     width: 90% !important;
     padding: 20px 20px 0 20px !important;
     margin: 0 !important;
@@ -769,8 +1253,6 @@ text-align: center;
     z-index: 1;
     position: relative;
   }
-
-  
 
   .cards1{
     flex-direction: column;
@@ -806,7 +1288,7 @@ text-align: center;
     margin-left: 10px !important;
   }
 
-   .ice-long-text{
+  .ice-long-text{
     margin: 10px 0 0 10px !important;
     width: 70% !important;
   }
@@ -853,846 +1335,23 @@ text-align: center;
   .privacy-text{
     width: 80%;
   }
-  
-}
 
-@media (max-width: 480px) {
-  .arrow-icon {
-    width: 6vw; /* Ещё меньше для маленьких экранов */
-  }
-
-  .arrow-icon2 {
-    width: 3vw; /* Уменьшаем размер стрелки */
-  }
-}
-
-
-
-/* ice */
-
-
-#ice {
-
-  background-size: cover; /* Фон растягивается, чтобы покрыть весь элемент */
-  background-position: center; /* Центрирование фона */
-  background-repeat: no-repeat; /* Фон не повторяется */
-  width: 80%; /* Указываем ширину */
-  height: 600px; /* Указываем высоту */
-  border-radius: 40px; /* Опционально: добавляем скругленные углы */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Опционально: тень для визуального эффекта */
-  color: white;
-  max-width: 1400px;
-}
-
-.ice-title{
-  font-family: Raleway;
-  z-index: 30;
-  color: white;
-  font-size: clamp(40px, 5vw, 80px);
-font-weight: 500;
-line-height: 1.2;
-text-align: left;
-margin: 68px 0 10px 43px
-
-}
-
-.ice-card {
- position: relative;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-
-
-
-  width: 271px;
-  height: 122px;
-
-  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-  border-image-slice: 1; /* Required to display the gradient border */
-  display: flex;
-  justify-content: space-between;
-}
-
-.ice-bubbles{
-  position: absolute;
-}
-
-.ice-btn{
-  background: #FFFFFF;
-  padding: 10px 15px 10px 15px;
-  border-radius: 20px;
-  color: #17FFB2;
-  font-family: Raleway;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 12px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-
-
-
-
-
-
-#ice {
-  /* background: url("src/img/steps.png");
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  width: 100%; 
-  height: 600px; 
-  border-radius: 40px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  color: white;
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto; */
-/* Gradient */
-
-position: absolute;
-width: 1543.03px;
-height: 1543.03px;
-left: 252.5px;
-top: -692.96px;
-
-background: url("src/img/Gradient.png");
-transform: rotate(24.2deg);
-
-
-
-
-
-
-}
-
-.ice2{
-/* Rectangle 9 */
-
-position: absolute;
-width: 1320px;
-height: 585px;
-left: -20px;
-top: -5px;
-
-background: #17FFB2;
-mix-blend-mode: hue;
-
-}
-
-
-.ice-cards{
-display: flex;
-width: 45%;
-margin-left: 35px;
-
-flex-direction: column;
-justify-content: space-between;
-
-}
-
-.cards1{
-  width: 100%;
-  display: flex;
-  height: 122px;
-
-  justify-content: space-between;
-  
-}
-
-.ice-card {
-  position: relative;
-/* Rectangle 5 */
-
-
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
-backdrop-filter: blur(17px);
-/* Note: backdrop-filter has minimal browser support */
-
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  color: white;
-  width: 49%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-
-  /* Создание полупрозрачного наложения */
-}
-
-
-
-
-
-
-.ice-bubbles{
-  position: absolute;
-}
-
-.ice-btn{
-  background: #FFFFFF;
-  padding: 10px 15px 10px 15px;
-  border-radius: 20px;
-  color: #17FFB2;
-  font-family: Raleway;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 12px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-
-.ice-chat{
-font-size: 20px;
-/* font-weight: 300; */
-line-height: 20px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
-  margin-left: 35px;
-
-}
-.ice-chat2{
-  font-size: 10px;
-  line-height: 10px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.ice-card2 {
-  position: relative;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
-backdrop-filter: blur(17px);
-  border-radius: 10px; 
-  color: white;
-
-  width: 49%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: left;
-
-}
-
-
-
-
-
-.arrow{
-  margin-right: 5px;
-}
-
-/* Rectangle 5 */
-
-.ice-card-long{
-  /* position: absolute; */
-  width: 100%;
-border-radius: 10px;
-margin-top: 20px;
-
-background: linear-gradient(180deg, rgba(176, 176, 176, 0.15) 0%, rgba(25, 25, 25, 0.18) 100%);
-backdrop-filter: blur(17px);
-overflow: hidden;
-height: 122px;
-
-
-
-
-display: flex;
-
-align-items: center;
-
-
-}
-
-.ice-long-text{
-  width: 50%;
-  
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 100%;
-  color: white;
-  margin-left: 35px;
-  /* or 20px */
-}
-
-.long-vector{
-  position: absolute;
-  right: 0;
-  top: 5px;
-
-width: 45%;
-display: flex;
-align-items: bottom;
-/* margin-top: 100px; */
-
-justify-content: center;
-
-}
-
-
-
-
-#secIce {
-  position: relative;
-  width: 1240px;
-  height: 560px;
-  background-color: #000000; /* Резервный фон */
-  overflow: hidden; /* Скрываем выходящие части */
-  border-radius: 40px;
-  
-
-
-}
-.bg-bg{
-  /* bg */
-
-/* bg */
-
-position: absolute;
-width: 2039.91px;
-height: 2039.91px;
-left: -379.96px;
-top: -692.96px;
-
-
-
-
-}
-
-.gr{
-  /* Gradient */
-
-
-/* Gradient */
-
-position: absolute;
-width: 1543.03px;
-height: 1543.03px;
-/* left: 252.5px;
-top: -692.96px; */
-background-image: url("src/img/Gradient.png");
-/* Gradient */
-
-
-transform: rotate(24.2deg);
-
-
-
-
-}
-
-
-
-
-
-
-
-.bg-ice{
-
-/* bg */
-
-
-
-
-
-}
-
-.fade1{
-  /* bg */
-
-position: absolute;
-width: 2039.91px;
-height: 2039.91px;
-left: -379.96px;
-top: -692.96px;
-
-
-}
-
-.gradient{
-/* Gradient */
-
-position: absolute;
-/* left: 300.5px;
-top: 240.96px; */
-
-
-background-size: cover; 
-background-repeat: no-repeat;
-background-position: center;
-
-
-/* Gradient */
-
-position: absolute;
-width: 1543.03px;
-height: 1543.03px;
-
-background: url("src/img/Gradient.png");
-transform: rotate(-24.2deg);
-
-
-
-}
-
-
-
-/* PLEASE */
-#steps{
-
-background: url("img/steps2.png");
-position: relative;
-/* width: 1240px;
-height: 560px; */
-background-color: #000000; /* Резервный фон */
-overflow: hidden; /* Скрываем выходящие части */
-border-radius: 40px;
-background-size: cover; 
-background-repeat: no-repeat;
-background-position: center;
-height: auto;
-padding: 0;
-
-}
-
-.ice-btn2{
-  margin: 20px 0 35px 35px;
-  color: #17FFB2;
-  background-color: white;
-
-padding: 10px 20px;
-gap: 10px;
-border-radius: 100px;
-opacity: 0px;
-font-family: Raleway;
-font-size: 20px;
-font-weight: 400;
-line-height: 20px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
-
-}
- 
-.card-cube{
-  display: flex;
-}
-
-
-.cube {
-  position: absolute;
-  width: 542.36px;
-  height: 475.33px;
-  top: 30%; /* Центрируем по вертикали */
-  left: 70%; /* Центрируем по горизонтали */
-  transform: translate(-40%, -50%); /* Для точного центрирования */
-  opacity: 1;
-  z-index: 1; /* Убедись, что кубик будет выше */
-}
-
-
-
-.faq-title {
-  font-family: Raleway;
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 48px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #fff;
-}
-
-.faq-items {
-  display: flex;
-  flex-direction: column;
-}
-
-.faq-item {
-  margin-bottom: 10px;
-}
-
-.faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  font-family: Raleway;
-  font-size: 24px;
-  font-size: clamp(18px, 5vw, 24px);
-  font-weight: 700;
-  line-height: 24px;
-  text-align: left;
-  cursor: pointer;
-  color: #fff;
-}
-
-.faqq{
-  width: 70%;
-}
-
-.faq-answer {
-  font-size: 16px;
-  font-family: Raleway;
-
-font-weight: 600;
-line-height: 19.2px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #B2B2B2;
-
-
-  font-family: Raleway;
-  width: 60%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-}
-
-.faq-item.active .faq-answer {
-  max-height: 1000px; /* Large enough value to show the content */
-}
-
-.faq-icon {
-  transition: transform 0.3s ease-out;
-}
-
-.faq-item.active .faq-icon {
-  transform: rotate(45deg); /* Adjust the rotation of the icon */
-}
-
-.divider {
-  height: 1px;
-  background-color: #fff;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-}
-
-#privacy{
-  background: url("img/private.png");
-  background-size: cover; /* Фон растягивается, чтобы покрыть весь элемент */
-  background-position: center; /* Центрирование фона */
-  background-repeat: no-repeat; /* Фон не повторяется */
-  /* height: 450px; */
-  padding: 20px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.privacy-title{
-  font-family: Raleway;
-  font-size: clamp(35px, 6vw, 100px);
-font-weight: 500;
-line-height: 1.2;
-text-align: center;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-margin-top: 90px;
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-/* width: 80%; */
-
-}
-
-.privacy-text{
-  font-family: Raleway;
-  font-size: clamp(18px, 5vw, 40px);
-  /* width: 80%; */
-font-weight: 500;
-line-height: 1.2;
-text-align: center;
-padding: 10px 30px;
-margin-top: 50px;
-
-}
-
-.privacy-button{
-  margin-top: 35px;
-  font-family: Raleway;
-font-size: 30px;
-font-weight: 500;
-line-height: 30px;
-text-align: left;
-background-color: transparent;
-  border: 2px solid #17FFB2;
-  border-radius: 100px;
-  padding: 10px 20px;
-  color: white;
-  font-family: Raleway;
-  font-size: 30px;
-
-
-}
-
-
-#footer{
-
-width: 100%;
-
-background-color: #111;
-
-}
-
-.footer-content{
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-justify-content: space-between;
-padding: 100px 0 50px 0;
-}
-
-.text-gray{
-  font-family: Raleway;
-font-size: 12px;
-font-weight: 600;
-line-height: 20px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #5B5E65;
-text-transform: uppercase;
-margin-top: 20px;
-
-}
-
-.footer-right{
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-}
-
-.foot-left{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 50%;
-}
-
-.foot-right{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 50%;
-  align-items: end;
-
-}
-
-.footer-text{
-  /* Why wraith VPN */
-
-
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 20px;
-/* identical to box height, or 167% */
-display: flex;
-align-items: center;
-text-transform: uppercase;
-
-color: #D5D5D5;
-
-
-}
-
-.text-gray2{
-  color: #5B5E65 !important;
-}
-
-.footer-text {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  color: #D5D5D5;
-}
-
-.language-select {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #D5D5D5;
-  background-color: transparent;
-  border: none;
-  appearance: none; /* Removes default dropdown appearance */
-  outline: none;
-  cursor: pointer;
-  margin: 0 5px 0 5px;
-  transition: color 0.3s ease;
-}
-
-.language-select:focus {
-  border: none;
-  outline: none;
-  color: #fff;
-}
-
-.language-select option {
-  background-color: #1e1e1e;
-  color: #D5D5D5;
-}
-
-.language-select::-ms-expand {
-  display: none; /* Hides the default dropdown arrow in IE */
-}
-
-.language-select-wrapper{
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-#whyUs{
-  align-items: start;
-}
-
-#whyUs .slick-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-
-
-
-/* Для мобильных устройств добавим отступы */
-@media (max-width: 576px) {
-  /* Секция - добавляем отступы по бокам */
-  section, header {
-    padding: 20px; /* Добавляем отступы по бокам */
-    box-sizing: border-box; /* Учитываем отступы в ширине */
-  }
-
-  /* Контейнеры с конкретными отступами */
-  .hero, .contact, .choose-title, .ice-title {
-    padding: 20px; /* Общий отступ по бокам */
-  }
-
-  .ice-title{
-    margin: 0;
-  }
-
-
-
-  /* .ice-card, .card {
-    width: calc(100% - 20px); 
-    margin: 10px 0; 
-  } */
-
-  /* .title {
-    font-size: 6vw; 
-    padding: 10px;
-  } */
-
-  .card {
-    width: "100%" !important;  
-  }
-
-
-  .startButton {
-    font-size: clamp(20px, 3vw, 30px);
-    padding: 8px 16px;
-    margin: 10px 0; /* Добавим отступы сверху и снизу */
-    margin-top: 30%;
-    
-  }
-
-  .hero-content {
-    flex-direction: column; /* Вертикальное расположение */
-    border-radius: 20px;
-  }
-
-  
-  .footer-right{
-    flex-direction: column ;
-  }
-
-  .foot-left, .foot-right{
-    align-items: center;
-    width: 100% !important;
-  }
-
-  .language-container{
-      margin-bottom: 40px;
-      margin-top: 15px;
-  }
-
-  /* Для фона с видео */
-  /* .background-video {
-    height: 50vh;
-    padding: 0 10px; 
-  } */
-}
-
-
-
-/* Общие стили для карточек в обычном виде (не слайдер) */
-.cards-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card-item {
-  width: 300px; /* Размер карточек */
-  height: auto;
-  background-color: #111;
-  color: white;
-  padding: 20px;
-}
-
-/* Стили для слайдера */
-@media (max-width: 768px) {
   .slider-container {
     width: 100%;
     max-width: 100%;
-    margin: 0 auto; /* Центрируем слайдер */
+    margin: 0 auto; 
   }
 
   .slider-item {
     display: flex;
-    justify-content: center; /* Центрируем карточки внутри слайдера */
+    justify-content: center; 
     padding: 10px;
   }
 
   .card-item {
-    width: 100%; /* На мобильных устройствах карточки занимают всю ширину */
+    width: 100%; 
     height: auto;
-    padding: 20px; /* Отступы для карточек */
+    padding: 20px;
   }
 
   .cube {
@@ -1701,12 +1360,13 @@ color: #D5D5D5;
     height: 80%;
     top: 12%;
     left: 20%;
-    opacity: 0.5;  /* Сделать его полупрозрачным для лучшего восприятия */
+    opacity: 0.5;  
     z-index: 5;
   }
+
   .ice-card, .ice-card2, .ice-card-long {
-    position: relative; /* Если они не имеют позиционирования, добавляем его */
-    z-index: 5; /* Уменьшаем z-index для карточек */
+    position: relative; 
+    z-index: 5; 
   }
 
   #steps {
@@ -1724,42 +1384,58 @@ color: #D5D5D5;
     z-index: 2;
   }
   
-
   .cube {
     position: absolute;
     width: 542.36px;
     height: 475.33px;
-    top: 30%; /* Центрируем по вертикали */
-    left: 40%; /* Центрируем по горизонтали */
-    transform: translate(-40%, -50%); /* Для точного центрирования */
+    top: 30%; 
+    left: 40%; 
+    transform: translate(-40%, -50%); 
     opacity: 1;
-    z-index: 1; /* Убедись, что кубик будет выше */
+    z-index: 1; 
   }
-  
-  
-  
+
+  #numbers{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #numbers .line, .icon {
+    display: none;
+  }
+
+  #numbers .circle {
+    width: 90% !important;
+  }
+
+  #numbers .num{
+    width: 100%;
+  }
+
+  #numbers .text{
+    font-size: 26px !important;
+
+  }
+
+  #numbers{
+    padding-bottom: 100px;
+  }
 }
 
 .card-btn{
   position: absolute;
-    bottom: 5%;
-    right: 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 8px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
-    color: white;
-    font-size: clamp(14px, 2vw, 18px);
-    line-height: 1.2;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: white;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.2;
 }
-
-
-
-
-
-
 
 .slick-dots li{
   margin: 0 !important;

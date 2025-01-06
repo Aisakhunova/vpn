@@ -85,13 +85,12 @@ export const Curtain = () => {
 
         <motion.div
           className="inner-container"
-          initial={{ opacity: 1, y: -500 }}
+          initial={{ opacity: 0, y: -500 }}
           animate={isMobile && inView ? "hover" : {}}
           variants={{
             hover: {
               y: 0,
               opacity: 1,
-              clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
             },
           }}
           transition={{ duration: 0.3 }}
