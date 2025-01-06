@@ -109,7 +109,8 @@ const resources = {
       },
 
       privacy: {
-        yourRules: "Your Privacy, Your Rules",
+        yourRules: "Your Privacy, ",
+        yourRules2: "Your Rules",
         noTrack: "We don’t track. We don’t log. We don’t judge."
       },
 
@@ -232,7 +233,8 @@ const resources = {
         },
   
         privacy: {
-          yourRules: "Ваша конфиденциальность, ваши правила",
+          yourRules: "Ваша конфиденциальность, ",
+          yourRules2: "Ваши правила",
           noTrack: "Мы не отслеживаем. Мы не ведем логи. Мы не осуждаем."
         },
   
@@ -345,7 +347,8 @@ const resources = {
         ]
       },
       privacy: {
-        yourRules: "您的隐私，您的规则",
+        yourRules: "您的隐私，",
+        yourRules2: "您的规则",
         noTrack: "我们不追踪。我们不记录。我们不评判。",
       },
       footer: {
@@ -456,7 +459,8 @@ const resources = {
           ]
         },
         privacy: {
-          yourRules: "حریم خصوصی شما، قوانین شما",
+          yourRules: "حریم خصوصی شما،",
+          yourRules2: "قوانین شما",
           noTrack: "ما پیگیری نمی‌کنیم. ما گزارش نمی‌دهیم. ما قضاوت نمی‌کنیم."
         },
         footer: {

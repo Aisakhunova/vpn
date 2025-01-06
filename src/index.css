@@ -1397,13 +1397,17 @@ color: #B2B2B2;
 
 .privacy-title{
   font-family: Raleway;
-  font-size: clamp(40px, 5vw, 100px);
+  font-size: clamp(35px, 6vw, 100px);
 font-weight: 500;
 line-height: 1.2;
 text-align: center;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 margin-top: 90px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
 /* width: 80%; */
 
 }
