@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Logo } from "../assets/Logo";
 
 const Contact = () => {
   const { t, i18n } = useTranslation();
@@ -14,7 +13,7 @@ const Contact = () => {
      <section>
      <div className="footer-content">
      <div className="footer-left">
-        <Logo />
+     <img className="num" src="src/img/logo3.svg"  />
         <div className="text-gray footer-rights">
           <div>{t("footer.rights")} </div>
           <div>©2024</div>
@@ -43,7 +42,7 @@ const Contact = () => {
                 <option value="fa">فارسی</option>
               </select>
               <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.31006 4.5L6.31006 8.5L10.3101 4.5" stroke="#D5D5D5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.31006 4.5L6.31006 8.5L10.3101 4.5" stroke="#D5D5D5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
             </div>
           </div>

@@ -107,7 +107,7 @@ export const Steps = () => {
           <div className="ice-long-text">{t("steps.setup")}</div>
           <div className="long-vector">
             
-          <source srcset="src/img/layers.webp" type="image/webp"></source>
+          <source srcSet="src/img/layers.webp" type="image/webp"></source>
             <img src="src/img/layers.png" alt="" />
           </div>
         </motion.div>
