@@ -856,7 +856,7 @@ text-align: center;
 
 
 #ice {
-  background: url("src/img/steps2.png");
+  background: url("/img/steps2.png");
   background-size: cover; /* Фон растягивается, чтобы покрыть весь элемент */
   background-position: center; /* Центрирование фона */
   background-repeat: no-repeat; /* Фон не повторяется */
@@ -1236,7 +1236,7 @@ transform: rotate(-24.2deg);
 /* PLEASE */
 #steps{
 
-background: url("src/img/steps2.png");
+background: url("/img/steps2.png");
 position: relative;
 /* width: 1240px;
 height: 560px; */
@@ -1367,7 +1367,7 @@ color: #B2B2B2;
 }
 
 #privacy{
-  background: url("src/img/private.png");
+  background: url("/img/private.png");
   background-size: cover; /* Фон растягивается, чтобы покрыть весь элемент */
   background-position: center; /* Центрирование фона */
   background-repeat: no-repeat; /* Фон не повторяется */
@@ -1612,7 +1612,6 @@ color: #D5D5D5;
 
   .hero-content {
     flex-direction: column; /* Вертикальное расположение */
-    padding: 10px;
     border-radius: 20px;
   }
 
