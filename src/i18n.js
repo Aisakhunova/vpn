@@ -27,7 +27,7 @@ const resources = {
         whyChooseUs1: "Why",
         whyChooseUs2: "Choose Us?",
         trust: "People trust us",
-        giga: "Total gigabytes of data protected",
+        giga: "Total gigabytes of data protected",
         global: "Access Global Content",
         using1: "Using cutting-edge protocols such ",
         using2: "as VLESS allows us",
