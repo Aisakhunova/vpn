@@ -102,7 +102,7 @@ export const Card2 = () => {
                 }}
                 className="shieldWrapper"
             >
-                <img src="src/img/shield.svg" alt="" className={styles.vector} />
+                <img src="img/shield.svg" alt="" className={styles.vector} />
             </motion.div>
 
             <div style={styles.btn} onClick={() => console.log("HOLA")}>

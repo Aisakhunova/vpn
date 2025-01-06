@@ -14,10 +14,9 @@ const Header = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <img src="src/img/logo2.png" className="logo" alt="" />
+      <img src="img/logo2.png" className="logo" alt="" />
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? (
-          // Крестик при открытом меню
           <svg
             width="30"
             height="30"
@@ -29,7 +28,6 @@ const Header = () => {
             <line x1="25" y1="5" x2="5" y2="25" stroke="white" strokeWidth="3" />
           </svg>
         ) : (
-          // Полоски при закрытом меню
           <svg
             width="30"
             height="30"

@@ -13,7 +13,7 @@ const Contact = () => {
      <section>
      <div className="footer-content">
      <div className="footer-left">
-     <img className="num" src="src/img/logo3.svg"  />
+     <img className="num" src="img/logo3.svg"  />
         <div className="text-gray footer-rights">
           <div>{t("footer.rights")} </div>
           <div>©2024</div>

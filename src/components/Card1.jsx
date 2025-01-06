@@ -54,7 +54,7 @@ const Card1 = () => {
         }}
         style={styles.vectorWrapper}
       >
-        <img src="src/img/planet.svg" alt="" style={styles.vector} />
+        <img src="img/planet.svg" alt="" style={styles.vector} />
       </motion.div>
       
       <motion.div
@@ -73,7 +73,7 @@ const Card1 = () => {
         }}
         style={styles.cloud}
       >
-        <img src="src/img/bubble.svg" alt="" style={styles.cloudVector} />
+        <img src="img/bubble.svg" alt="" style={styles.cloudVector} />
       </motion.div>
 
       <div style={styles.btn} onClick={() => console.log("HOLA")}>

@@ -56,7 +56,7 @@ const Card4 = () => {
         }}
         style={styles.vectorWrapper}
       >
-        <img src="src/img/wheel.svg" alt="" style={styles.vector} />
+        <img src="img/wheel.svg" alt="" style={styles.vector} />
       </motion.div>
 
       <motion.div

@@ -58,7 +58,7 @@ const Card3 = () => {
         }}
         style={styles.vectorWrapper}
       >
-        <img src="src/img/lightning.svg" alt="" style={styles.vector} />
+        <img src="img/lightning.svg" alt="" style={styles.vector} />
       </motion.div>
 
       <motion.div
