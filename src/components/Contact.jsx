@@ -24,7 +24,7 @@ const Contact = () => {
           <a className="footer-text" href="#whyUs">{t("footer.why")}</a>
           <a className="footer-text" href="#steps">{t("footer.steps")}</a>
           <a className="footer-text" href="#faq">{t("footer.faq")}</a>
-          <div className="footer-text">{t("footer.join")}</div>
+          <a className="footer-text" href="#curtain">{t("footer.join")}</a>
         </div>
         <div className="foot-right">
           <div className="footer-text language-container">

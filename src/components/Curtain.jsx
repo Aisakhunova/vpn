@@ -1,13 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useInView } from "react-intersection-observer";
 
 export const Curtain = () => {
   const { t } = useTranslation();
+  const [isMobile, setIsMobile] = useState(false); // Состояние для мобильного устройства
+  const [inView, setInView] = useState(false); // Состояние для отслеживания видимости
+
+  // Настраиваем useInView для отслеживания области видимости
+  const { ref, inView: isInView } = useInView({
+    triggerOnce: true, // Анимация запускается один раз
+    threshold: 0.1, // 10% видимости элемента
+  });
+
+  // Проверяем, является ли устройство мобильным
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, []);
+
+  // Обновляем состояние видимости элемента
+  useEffect(() => {
+    if (isInView) {
+      setInView(true);
+    }
+  }, [isInView]);
+
   return (
     <motion.div
       className="container"
-      whileHover="hover" // Включение анимации при наведении
+      ref={ref} // Привязываем реф для отслеживания видимости
+      whileHover="hover"
       id="curtain"
     >
       <motion.div
@@ -15,17 +42,18 @@ export const Curtain = () => {
         whileHover="hover"
         style={{
           position: "relative",
-          overflow: "hidden", // скрываем лишние элементы
+          overflow: "hidden",
         }}
       >
         {/* Слой вспышки */}
         <motion.div
           className="flash"
           initial={{ opacity: 0 }}
+          animate={isMobile && inView ? "hover" : {}}
           variants={{
             hover: {
-              opacity: [0, 1, 1], // Вспышка от прозрачной к яркой и обратно
-              scale: [1, 1.5, 1], // Небольшое увеличение
+              opacity: [0, 1, 1],
+              scale: [1, 1.5, 1],
             },
           }}
           transition={{
@@ -38,15 +66,16 @@ export const Curtain = () => {
             left: 0,
             right: 0,
             bottom: 0,
-            background: "radial-gradient(circle, white, transparent)", // Вспышка в виде градиента
-            zIndex: -1, // Убираем вспышку за контент
-            pointerEvents: "none", // Не мешает взаимодействию
+            background: "radial-gradient(circle, white, transparent)",
+            zIndex: -1,
+            pointerEvents: "none",
           }}
         ></motion.div>
 
         {/* Основная надпись */}
         <motion.h1
           className="main-text"
+          animate={isMobile && inView ? "hover" : {}}
           variants={{
             hover: {
               y: 300,
@@ -55,15 +84,14 @@ export const Curtain = () => {
           }}
           transition={{ duration: 0.3, delay: 0.1 }}
         >
-          <div className="choose-green">
-          {t("curtain.ready")}
-          </div>
+          <div className="choose-green">{t("curtain.ready")}</div>
         </motion.h1>
 
         {/* Овальная зелёная шторка */}
         <motion.div
           className="inner-container"
-          initial={{ opacity: 1, y: -500 }} // начальная позиция
+          initial={{ opacity: 1, y: -500 }}
+          animate={isMobile && inView ? "hover" : {}}
           variants={{
             hover: {
               y: 0,
@@ -73,9 +101,10 @@ export const Curtain = () => {
           }}
           transition={{ duration: 0.3 }}
         >
-          <p className="curtain-text">{t("curtain.iamready")} </p>
+          <p className="curtain-text">{t("curtain.iamready")}</p>
           <motion.div
             initial={{ opacity: 0, x: -100 }}
+            animate={isMobile && inView ? "hover" : {}}
             variants={{
               hover: {
                 x: 0,
