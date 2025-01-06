@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
           </div>
           <div className='bottom-text'>
-            <button className='startButton'>{t("header.start")}</button>
+            <button className='startButton st-btn'>{t("header.start")}</button>
 
             <div className='text-right'>
               <div className='enjoy'>{t("header.enjoy")}</div>

@@ -264,6 +264,10 @@ html {
 
 }
 
+.st-btn{
+  font-size: 30px;
+}
+
 .text-right {
   font-family: Raleway;
   display: flex;
