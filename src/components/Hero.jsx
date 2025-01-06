@@ -18,32 +18,39 @@ const Hero = () => {
   </video>
         <div className='text-left'>
           <div>
-          <div className='title'>{t("header.your")} <span className='green-back'>{t("header.online")} <span className='green-mob'>{t("header.freedom")}</span> </span> <br />{t("header.startsHere")}</div>
-          <div className='description mTop'>
-            <div>{t("header.anonymous")}</div>
-            <div>{t("header.noLogs")}</div>
-            <div>{t("header.browsing")}</div>
-          </div>
+            <div className='title'>
+              {t("header.your")} 
+              <span className='green-back'>
+                {t("header.online")} 
+                <span className='green-mob'>
+                  {t("header.freedom")}
+                </span> 
+              </span>
+              <br />
+              {t("header.startsHere")}
+            </div>
+            <div className='description mTop'>
+              <div>{t("header.anonymous")}</div>
+              <div>{t("header.noLogs")}</div>
+              <div>{t("header.browsing")}</div>
+            </div>
           </div>
           <div className='bottom-text'>
-          <a
-            className="startButton st-btn"
-            href="https://t.me/exeslam"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            {t("header.start")}
-        </a>
+            <a
+              className="startButton st-btn"
+              href="https://t.me/exeslam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("header.start")}
+            </a>
 
             <div className='text-right'>
               <div className='enjoy'>{t("header.enjoy")}</div>
               <div className='mTop'>{t("header.noWorry")}</div>
             </div>
           </div>
-          
-
         </div>
-      
       </div>
     </motion.section>
   );
@@ -55,22 +62,15 @@ const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     height: "30%",
-  
     bottom: "0",
  
   },
 
   textRight: {
     fontFamily: "Raleway",
-    // lineHeight: "19.2px",
     textAlign: "right",
     width: "33%",
-    // gap: "10px"
   },
-
-  mTop: {
-    // marginTop: "20px"
-  }
 }
 
 export default Hero;

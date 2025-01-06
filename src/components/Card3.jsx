@@ -5,25 +5,22 @@ import { useInView } from "react-intersection-observer";
 
 const Card3 = () => {
   const { t } = useTranslation();
-  const [isMobile, setIsMobile] = useState(false); // Состояние для мобильного устройства
-  const [inView, setInView] = useState(false); // Состояние для отслеживания видимости
+  const [isMobile, setIsMobile] = useState(false); 
+  const [inView, setInView] = useState(false);
 
-  // Настроим useInView для отслеживания попадания в область видимости
   const { ref, inView: isInView } = useInView({
-    triggerOnce: true, // Срабатывает при первом попадании в зону видимости
-    threshold: 0.1, // 10% элемента в зоне видимости
+    triggerOnce: true, 
+    threshold: 0.1, 
   });
 
-  // Устанавливаем isMobile на основе ширины экрана
   useEffect(() => {
     if (window.innerWidth <= 768) {
-      setIsMobile(true); // Это мобильное устройство
+      setIsMobile(true); 
     } else {
-      setIsMobile(false); // Это не мобильное
+      setIsMobile(false); 
     }
   }, []);
 
-  // Когда элемент попадает в зону видимости, обновляем состояние
   useEffect(() => {
     if (isInView) {
       setInView(true);
@@ -33,7 +30,7 @@ const Card3 = () => {
   return (
     <motion.div
       className="card3"
-      ref={ref} // Привязываем useInView
+      ref={ref} 
       whileHover="hover"
     >
       <div style={styles.title} className="card-mob">
@@ -53,8 +50,8 @@ const Card3 = () => {
         animate={isMobile && inView ? "hover" : {}}
         transition={{
           type: "spring",
-          stiffness: 300, // Controls the "jump" intensity
-          damping: 20,    // Controls how quickly it settles
+          stiffness: 300, 
+          damping: 20,    
         }}
         style={styles.vectorWrapper}
       >
@@ -85,12 +82,12 @@ const Card3 = () => {
       </motion.div>
 
       <a
-            style={styles.btn}
-            href="https://t.me/exeslam"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-          <svg
+        className="card-btn"
+        href="https://t.me/exeslam"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg
           width="18"
           height="16"
           viewBox="0 0 18 16"
@@ -103,8 +100,8 @@ const Card3 = () => {
             fill="white"
           />
         </svg>
-            <div style={styles.btnText}>{t("header.getAccess")}</div>
-        </a>
+        <div style={styles.btnText}>{t("header.getAccess")}</div>
+      </a>
     </motion.div>
   );
 };
@@ -132,11 +129,17 @@ const styles = {
   },
   btn: {
     position: "absolute",
-    bottom: "20px",
-    right: "20px",
+    bottom: "5%",
+    right: "5%",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    padding: "4px 8px", // Небольшие отступы вокруг текста
+    background: "rgba(0, 0, 0, 0.5)", // Тёмный полупрозрачный фон
+    borderRadius: "4px", // Лёгкое закругление для плавности
+    color: "white",
+    fontSize: "clamp(14px, 2vw, 18px)", // Динамичный размер текста
+    lineHeight: "1.2",
   },
   btnText: {
     fontFamily: "'Raleway'",

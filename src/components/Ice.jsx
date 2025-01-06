@@ -11,10 +11,10 @@ export const Steps = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true); // Element becomes visible
+          setIsVisible(true); 
         }
       },
-      { threshold: 0.3 } // Trigger when 30% of the section is visible
+      { threshold: 0.3 } 
     );
 
     if (sectionRef.current) {
@@ -31,7 +31,9 @@ export const Steps = () => {
   return (
     <motion.section id="steps" ref={sectionRef}>
       <div className="rectangle9">
-        <div className="ice-title">{t("steps.getStarted")}</div>
+        <div className="ice-title">
+          {t("steps.getStarted")}
+        </div>
       </div>
 
       <div className="ice-cards">
@@ -49,9 +51,14 @@ export const Steps = () => {
             }}
             className="ice-card"
           >
-            <a className="ice-btn" href="https://t.me/exeslam"
-            target="_blank"
-            rel="noopener noreferrer">{t("steps.click")}</a>
+            <a 
+              className="ice-btn" 
+              href="https://t.me/exeslam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("steps.click")}
+            </a>
           </motion.div>
 
           <motion.div
@@ -69,11 +76,17 @@ export const Steps = () => {
             className="ice-card2"
           >
             <div className="ice-chat">
-            {t("steps.chat1")} <span className="green-back2">{t("steps.chat2")}</span>
+              {t("steps.chat1")} 
+              <span className="green-back2">
+                {t("steps.chat2")}
+              </span>
             </div>
-            <a className="ice-chat2" href="https://t.me/exeslam"
-            target="_blank"
-            rel="noopener noreferrer">
+            <a 
+              className="ice-chat2" 
+              href="https://t.me/exeslam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 width="9"
                 height="8"
@@ -110,8 +123,6 @@ export const Steps = () => {
         >
           <div className="ice-long-text">{t("steps.setup")}</div>
           <div className="long-vector">
-            
-          {/* <source srcSet="src/img/layers.webp" type="image/webp"></source> */}
             <img src="img/layers2.svg" alt="" />
           </div>
         </motion.div>
@@ -130,34 +141,31 @@ export const Steps = () => {
         }}
         className="cube"
       >
-        {/* <source srcset="src/img/cube2.webp" type="image/webp"></source> */}
         <img src="img/cube2.svg" alt="" />
       </motion.div>
 
       <a
-            href="https://t.me/exeslam"
-            target="_blank"
-            rel="noopener noreferrer"
-            
+        href="https://t.me/exeslam"
+        target="_blank"
+        rel="noopener noreferrer" 
+      >
+        <motion.button
+          className="ice-btn2"
+              variants={{
+                  visible: { y: 0, opacity: 1 },
+                  hidden: { y: 600, opacity: 0 },
+              }}
+              initial="hidden"
+              animate={isVisible ? "visible" : "hidden"}
+              transition={{
+                  duration: 0.5,
+                  ease: "easeInOut",
+                  delay: 1,
+              }}
         >
-            <motion.button
-            className="ice-btn2"
-                variants={{
-                    visible: { y: 0, opacity: 1 },
-                    hidden: { y: 600, opacity: 0 },
-                }}
-                initial="hidden"
-                animate={isVisible ? "visible" : "hidden"}
-                transition={{
-                    duration: 0.5,
-                    ease: "easeInOut",
-                    delay: 1,
-                }}
-            >
-                {t("header.getAccess")}
-            </motion.button>
-        </a>
-    
+          {t("header.getAccess")}
+        </motion.button>
+      </a>
     </motion.section>
   );
 };

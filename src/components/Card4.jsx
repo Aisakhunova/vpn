@@ -6,25 +6,22 @@ import { useInView } from "react-intersection-observer";
 
 const Card4 = () => {
   const { t } = useTranslation();
-  const [isMobile, setIsMobile] = useState(false); // Состояние для мобильного устройства
-  const [inView, setInView] = useState(false); // Состояние для отслеживания видимости
+  const [isMobile, setIsMobile] = useState(false); 
+  const [inView, setInView] = useState(false);
 
-  // Настроим useInView для отслеживания попадания в область видимости
   const { ref, inView: isInView } = useInView({
-    triggerOnce: true, // Срабатывает при первом попадании в зону видимости
-    threshold: 0.1, // 10% элемента в зоне видимости
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
-  // Устанавливаем isMobile на основе ширины экрана
   useEffect(() => {
     if (window.innerWidth <= 768) {
-      setIsMobile(true); // Это мобильное устройство
+      setIsMobile(true);
     } else {
-      setIsMobile(false); // Это не мобильное
+      setIsMobile(false); 
     }
   }, []);
 
-  // Когда элемент попадает в зону видимости, обновляем состояние
   useEffect(() => {
     if (isInView) {
       setInView(true);
@@ -35,7 +32,7 @@ const Card4 = () => {
     <motion.div
       className="card-4 card4"
       whileHover="hover"
-      ref={ref} // Привязываем useInView
+      ref={ref} 
     >
       <div style={styles.title} className="card-mob">
         {t("whyUs.unlimited1")}
@@ -93,7 +90,7 @@ const Card4 = () => {
         transition={{
           duration: 0.5,
           type: "spring",
-          stiffness: 300, // Controls the "jump" intensity
+          stiffness: 300, 
           damping: 20,
         }}
         style={styles.card4Footer}
@@ -102,12 +99,12 @@ const Card4 = () => {
       </motion.div>
 
       <a
-            style={styles.btn}
-            href="https://t.me/exeslam"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-          <svg
+        className="card-btn"
+        href="https://t.me/exeslam"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg
           width="18"
           height="16"
           viewBox="0 0 18 16"
@@ -120,8 +117,8 @@ const Card4 = () => {
             fill="white"
           />
         </svg>
-            <div style={styles.btnText}>{t("header.getAccess")}</div>
-        </a>
+        <div style={styles.btnText}>{t("header.getAccess")}</div>
+      </a>
     </motion.div>
   );
 };
@@ -129,9 +126,9 @@ const Card4 = () => {
 const styles = {
   card: {
     position: "relative",
-    width: "90%", // Адаптивная ширина
-    maxWidth: "48%", // Максимальная ширина
-    aspectRatio: "1", // Поддержка соотношения сторон 1:1
+    width: "90%", 
+    maxWidth: "48%", 
+    aspectRatio: "1", 
     backgroundColor: "#111111",
     display: "flex",
     overflow: "hidden",
@@ -164,11 +161,17 @@ const styles = {
   },
   btn: {
     position: "absolute",
-    bottom: "20px",
-    right: "20px",
+    bottom: "5%",
+    right: "5%",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    padding: "4px 8px", 
+    background: "rgba(0, 0, 0, 0.5)",
+    borderRadius: "4px", 
+    color: "white",
+    fontSize: "clamp(14px, 2vw, 18px)", 
+    lineHeight: "1.2",
   },
   btnText: {
     fontFamily: "'Raleway'",
@@ -177,7 +180,7 @@ const styles = {
     marginLeft: "10px",
   },
   card4Footer: {
-    position: "absolute", // Позиционирование внутри родителя
+    position: "absolute", 
     width: "100%",
     height: "70px",
     bottom: "3%",

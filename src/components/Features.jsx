@@ -13,19 +13,17 @@ import { useTranslation } from "react-i18next";
 const WhyUs = () => {
   const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
-  const [currentSlide, setCurrentSlide] = useState(0); // Для отслеживания текущего слайда
+  const [currentSlide, setCurrentSlide] = useState(0); 
 
-  // Проверка ширины экрана и установка состояния isMobile
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Слайдер будет отображаться на экранах шириной 768px и меньше
+      setIsMobile(window.innerWidth <= 768); 
     };
-    handleResize(); // Вызовем один раз для начальной проверки
-    window.addEventListener("resize", handleResize); // Слушаем изменение размера окна
-    return () => window.removeEventListener("resize", handleResize); // Убираем слушателя при размонтировании
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize); 
   }, []);
 
-  // Конфигурация слайдера
   const sliderSettings = {
     dots: true,
     arrows: false,
@@ -33,17 +31,17 @@ const WhyUs = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex), // Обновляем текущий слайд
+    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex), 
     customPaging: (i) => (
       <div
         style={{
-          opacity: i === currentSlide ? "100%" : "20%", // Белая точка для текущего слайда, чёрные для остальных
+          opacity: i === currentSlide ? "100%" : "20%", 
           backgroundColor: "white",
-          borderRadius: "50%", // Сделаем точки круглыми
-          width: "10px", // Размер точки
-          height: "10px", // Размер точки
-          margin: "0 5px", // Расстояние между точками
-          cursor: "pointer", // Добавляем курсор для кликабельности
+          borderRadius: "50%", 
+          width: "10px",
+          height: "10px", 
+          margin: "0 5px",  
+          cursor: "pointer", 
         }}
       ></div>
     ),

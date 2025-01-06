@@ -5,16 +5,15 @@ import { useInView } from "react-intersection-observer";
 
 export const Curtain = () => {
   const { t } = useTranslation();
-  const [isMobile, setIsMobile] = useState(false); // Состояние для мобильного устройства
-  const [inView, setInView] = useState(false); // Состояние для отслеживания видимости
+  const [isMobile, setIsMobile] = useState(false); 
+  const [inView, setInView] = useState(false); 
 
-  // Настраиваем useInView для отслеживания области видимости
+
   const { ref, inView: isInView } = useInView({
-    triggerOnce: true, // Анимация запускается один раз
-    threshold: 0.1, // 10% видимости элемента
+    triggerOnce: true, 
+    threshold: 0.1, 
   });
 
-  // Проверяем, является ли устройство мобильным
   useEffect(() => {
     if (window.innerWidth <= 768) {
       setIsMobile(true);
@@ -23,7 +22,6 @@ export const Curtain = () => {
     }
   }, []);
 
-  // Обновляем состояние видимости элемента
   useEffect(() => {
     if (isInView) {
       setInView(true);
@@ -33,7 +31,7 @@ export const Curtain = () => {
   return (
     <motion.div
       className="container"
-      ref={ref} // Привязываем реф для отслеживания видимости
+      ref={ref} 
       whileHover="hover"
       id="curtain"
     >
@@ -45,7 +43,6 @@ export const Curtain = () => {
           overflow: "hidden",
         }}
       >
-        {/* Слой вспышки */}
         <motion.div
           className="flash"
           initial={{ opacity: 0 }}
@@ -72,7 +69,6 @@ export const Curtain = () => {
           }}
         ></motion.div>
 
-        {/* Основная надпись */}
         <motion.h1
           className="main-text"
           animate={isMobile && inView ? "hover" : {}}
@@ -87,7 +83,6 @@ export const Curtain = () => {
           <div className="choose-green">{t("curtain.ready")}</div>
         </motion.h1>
 
-        {/* Овальная зелёная шторка */}
         <motion.div
           className="inner-container"
           initial={{ opacity: 1, y: -500 }}
@@ -101,11 +96,14 @@ export const Curtain = () => {
           }}
           transition={{ duration: 0.3 }}
         >
-          <a href="https://t.me/exeslam"
+          <a 
+            href="https://t.me/exeslam"
             target="_blank"
-            rel="noopener noreferrer">
-          <p  className="curtain-text">{t("curtain.iamready")}</p>
+            rel="noopener noreferrer"
+          >
+            <p className="curtain-text">{t("curtain.iamready")}</p>
           </a>
+          
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={isMobile && inView ? "hover" : {}}

@@ -5,24 +5,23 @@ import { useInView } from "react-intersection-observer";
 
 const Card1 = () => {
   const { t } = useTranslation();
-  const [isMobile, setIsMobile] = useState(false);  // Состояние для мобильного устройства
-  const [inView, setInView] = useState(false);  // Состояние для отслеживания видимости
+  const [isMobile, setIsMobile] = useState(false);  
+  const [inView, setInView] = useState(false);  
 
   const { ref, inView: isInView } = useInView({
-    triggerOnce: true, // Срабатывает при первом попадании в зону видимости
-    threshold: 0.1, // 10% элемента в зоне видимости
+    triggerOnce: true, 
+    threshold: 0.1, 
   });
 
-  // Устанавливаем isMobile на основе ширины экрана
   useEffect(() => {
     if (window.innerWidth <= 768) {
-      setIsMobile(true); // Это мобильное устройство
+      setIsMobile(true); 
     } else {
-      setIsMobile(false); // Это не мобильное
+      setIsMobile(false); 
     }
   }, []);
 
-  // Когда элемент попадает в зону видимости, обновляем состояние
+
   useEffect(() => {
     if (isInView) {
       setInView(true);
@@ -36,7 +35,6 @@ const Card1 = () => {
       ref={ref}
     >
       <div style={styles.title}>{t("whyUs.global")}</div>
-      
       <motion.div
         variants={{
           hover: {
@@ -46,7 +44,11 @@ const Card1 = () => {
             y: 0,
           },
         }}
-        initial={{ rotate: 60, x: 95, y: 60, scale: 0.8 }}
+        initial={{ 
+          rotate: 60, 
+          x: 95, y: 60, 
+          scale: 0.8 
+        }}
         animate={isMobile && inView ? "hover" : {}}
         transition={{
           duration: 0.5,
@@ -65,7 +67,11 @@ const Card1 = () => {
             rotate: 0,
           },
         }}
-        initial={{ x: -400, y: "150%", rotate: 45 }}
+        initial={{ 
+          x: -400, 
+          y: "150%", 
+          rotate: 45 
+        }}
         animate={isMobile && inView ? "hover" : {}}
         transition={{
           duration: 0.5,
@@ -75,14 +81,13 @@ const Card1 = () => {
       >
         <img src="img/bubble.svg" alt="" style={styles.cloudVector} />
       </motion.div>
-
-      <a
-            style={styles.btn}
-            href="https://t.me/exeslam"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-          <svg
+      <a    
+        href="https://t.me/exeslam"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="card-btn"
+      >
+        <svg
           width="18"
           height="16"
           viewBox="0 0 18 16"
@@ -95,10 +100,8 @@ const Card1 = () => {
             fill="white"
           />
         </svg>
-            <div style={styles.btnText}>{t("header.getAccess")}</div>
-        </a>
-
-     
+        <div style={styles.btnText}>{t("header.getAccess")}</div>
+      </a>
     </motion.div>
   );
 };
@@ -141,6 +144,12 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    padding: "4px 8px", 
+    background: "rgba(0, 0, 0, 0.5)", 
+    borderRadius: "4px", 
+    color: "white",
+    fontSize: "clamp(14px, 2vw, 18px)", 
+    lineHeight: "1.2",
   },
   btnText: {
     fontFamily: "'Raleway', sans-serif",
