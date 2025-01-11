@@ -60,6 +60,34 @@ const Card1 = () => {
       </motion.div>
       
       <motion.div
+  variants={{
+    hover: {
+      x: 0,
+      y: "0",
+      rotate: -8,
+    },
+  }}
+  initial={{
+    x: -400,
+    y: "150%",
+    rotate: 45,
+  }}
+  animate={isMobile && inView ? "hover" : {}}
+  transition={{
+    duration: 0.5,
+    ease: "easeInOut",
+  }}
+  style={styles.cloud}
+>
+  {/* SVG-картинка облака */}
+  <img src="img/bubble2.svg" alt="cloud" style={styles.cloudVector} />
+
+  {/* Текст поверх SVG */}
+  <div style={styles.cloudText}>
+    <p className="bubble-text">{t("whyUs.cloudText")}</p>
+  </div>
+</motion.div>
+      {/* <motion.div
         variants={{
           hover: {
             x: 0,
@@ -79,8 +107,8 @@ const Card1 = () => {
         }}
         style={styles.cloud}
       >
-        <img src="img/bubble.svg" alt="" style={styles.cloudVector} />
-      </motion.div>
+        <div style={styles.cloudVector}>Hola cepasa</div>
+      </motion.div> */}
       <a    
         href="https://t.me/exeslam"
         target="_blank"
@@ -120,13 +148,29 @@ const styles = {
   },
   cloud: {
     position: "absolute",
-    top: "33%",
+    top: "42%",
     left: "5%",
     width: "50%",
+    display: "flex", // Используем flex для центрирования
+    justifyContent: "center",
+    alignItems: "center",
   },
   cloudVector: {
     width: "100%",
     height: "auto",
+    position: "absolute", // Чтобы текст был над SVG
+    zIndex: 1,
+  },
+  cloudText: {
+    position: "relative", // Текст поверх облака
+    fontSize: "clamp(16px, 3vw, 24px)",
+    fontWeight: "500",
+    textAlign: "center",
+    color: "white", // Цвет текста
+    zIndex: 10, // Чтобы текст был над SVG
+    display: "flex",
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   title: {
     fontSize: "clamp(34px, 5vw, 60px)",
@@ -156,7 +200,8 @@ const styles = {
     fontSize: "clamp(14px, 2vw, 20px)",
     lineHeight: "1.2",
     marginLeft: "10px",
-  },
+    zIndex: "200 !important",
+  }
 };
 
 export default Card1;

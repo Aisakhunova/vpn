@@ -48,7 +48,7 @@ export const Card2 = () => {
             >
                 <div className="card-pale-text">
                     {t("whyUs.using1")}
-                    <div>{t("whyUs.using2")}</div>
+                    {t("whyUs.using2")}
                 </div>
             </motion.div>
 

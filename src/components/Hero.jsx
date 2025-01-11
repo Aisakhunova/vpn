@@ -14,8 +14,8 @@ const Hero = () => {
     >
       <div className="hero-content">
       <video autoPlay muted loop playsInline className="background-video">
-    <source src={videoSrc} type="video/mp4" />
-  </video>
+        <source src={videoSrc} type="video/mp4" />
+      </video>
         <div className='text-left'>
           <div>
             <div className='title'>

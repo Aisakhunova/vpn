@@ -126,6 +126,7 @@ const styles = {
     marginTop: "10%",
     marginBottom: "10%",
     marginLeft: "35px",
+    zIndex: "10",
   },
   btn: {
     position: "absolute",

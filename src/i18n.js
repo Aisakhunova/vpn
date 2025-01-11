@@ -10,8 +10,8 @@ const resources = {
         whyUs: "Why Choose Us?",
         private: "Private",
         getAccess: "Get access",
-        your: "Your",
-        online: "Online",
+        your: "Your ",
+        online: "Online ",
         freedom: "Freedom",
         startsHere: "Starts Here",
         anonymous: "100% Anonymous,",
@@ -39,11 +39,12 @@ const resources = {
         stream1: "Stream, browse,",
         stream2: "and download with ",
         stream3: "no interruptions",
-        unlimited1: "Unlimited",
+        unlimited1: "Unlimited ",
         unlimited2: "Bandwidth",
         noData: "No data caps, no throttling.",
         experience: "Enjoy an unrestricted internet experience",
-        max: "max"
+        max: "max",
+        cloudText: "Say goodbye to geo-blocks"
       },
 
       curtain: {
@@ -136,8 +137,8 @@ const resources = {
           whyUs: "Почему выбирают нас?",
           private: "Приватность",
           getAccess: "Получить доступ",
-          your: "Ваша",
-          online: "Интернет",
+          your: "Ваша ",
+          online: "Интернет ",
           freedom: "Свобода",
           startsHere: "Начинается здесь",
           anonymous: "100% Анонимность,",
@@ -165,11 +166,12 @@ const resources = {
           stream1: "Стримьте, просматривайте",
           stream2: "и скачивайте без",
           stream3: "перерывов",
-          unlimited1: "Неограниченная",
+          unlimited1: "Неограниченная ",
           unlimited2: "пропускная способность",
           noData: "Нет ограничений по данным, нет ограничений скорости.",
           experience: "Наслаждайтесь неограниченным интернет-опытом",
-          max: "максимум"
+          max: "макс",
+          cloudText: "Скажите «прощай» гео-блокировкам"
         },
   
         curtain: {
@@ -260,8 +262,8 @@ const resources = {
         whyUs: "为什么选择我们？",
         private: "私人",
         getAccess: "获取访问",
-        your: "您的",
-        online: "在线",
+        your: "您的 ",
+        online: "在线 ",
         freedom: "自由",
         startsHere: "从这里开始",
         anonymous: "100% 匿名，",
@@ -287,11 +289,12 @@ const resources = {
         stream1: "流式传输，浏览，",
         stream2: "下载，",
         stream3: "没有中断",
-        unlimited1: "无限带宽",
+        unlimited1: "无限带宽 ",
         unlimited2: "无限带宽",
         noData: "没有数据上限，没有速度限制。",
         experience: "享受无限制的互联网体验",
-        max: "最大"
+        max: "最大",
+        cloudText: "告别地理封锁"
       },
       curtain: {
         ready: "准备好体验在线自由了吗？",
@@ -371,8 +374,8 @@ const resources = {
           whyUs: "چرا ما را انتخاب کنید؟",
           private: "خصوصی",
           getAccess: "دسترسی بگیرید",
-          your: "שֶׁלְךָ",
-          online: "אינטרנט",
+          your: "שֶׁלְךָ" ,
+          online: "אינטרנט" ,
           freedom: "חופש",
           startsHere: "מתחיל כאן",
           anonymous: "۱۰۰٪ ناشناس،",
@@ -399,11 +402,12 @@ const resources = {
           stream1: "پخش، مرور،",
           stream2: "و دانلود بدون هیچ‌گونه وقفه",
           stream3: "بدون وقفه",
-          unlimited1: "باند پهنای نامحدود",
+          unlimited1: "باند پهنای نامحدود ",
           unlimited2: "باند پهنای نامحدود",
           noData: "هیچ محدودیتی برای داده‌ها، هیچ محدودیتی برای سرعت.",
           experience: "از تجربه‌ای بدون محدودیت لذت ببرید",
-          max: "حداکثر"
+          max: "حداکثر",
+          cloudText: "با محدودیت‌های جغرافیایی خداحافظی کنید"
         },
         curtain: {
           ready: "آماده تجربه آزادی آنلاین هستید؟",
