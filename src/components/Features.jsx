@@ -56,7 +56,7 @@ const WhyUs = () => {
       transition={{ duration: 1, delay: 1 }}
     >
       {isMobile ? (
-        <Slider {...sliderSettings}>
+        <Slider {...sliderSettings} className="mTop">
           <div className="slider-card">
             <Card1 />
           </div>
