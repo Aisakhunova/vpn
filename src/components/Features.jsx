@@ -55,7 +55,7 @@ const WhyUs = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 1 }}
     >
-      {isMobile ? (
+      {false ? (
         <Slider {...sliderSettings} className="mTop">
           <div className="slider-card">
             <Card1 />
