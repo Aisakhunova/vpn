@@ -13,7 +13,7 @@ const Hero = () => {
       transition={{ duration: 1 }}
     >
       <div className="hero-content">
-      <video autoplay muted loop playsInline className="background-video">
+      <video autoPlay muted loop playsInline className="background-video">
         <source src={videoSrc} type="video/mp4" />
       </video>
         <div className='text-left'>
