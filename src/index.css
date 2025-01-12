@@ -1066,7 +1066,7 @@ background-color: #111;
     font-size: clamp(20px, 3vw, 30px);
     padding: 8px 16px;
     margin: 10px 0;
-    margin-top: 30%;
+    margin-top: 15%;
     
   }
 
@@ -1165,7 +1165,7 @@ background-color: #111;
   .hero-content {
     flex-direction: column;
     justify-content: center;
-    height: auto; 
+    max-height: 90vh; 
   }
 
   .card-pale-text{
@@ -1404,6 +1404,7 @@ background-color: #111;
     background-position: center;
     height: auto;
     padding: 0;
+
   }
 
   .ice-cards{
