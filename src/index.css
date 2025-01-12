@@ -1249,15 +1249,14 @@ background-color: #111;
     display: none;
   }
 
-  /* #hero .green-back{
+  #hero .green-back{
     background-color: transparent;
-  } */
+  }
 
-  /* #hero .green-mob{
+  #hero .green-mob{
     background-color: #17FFB2;
     border-radius: 10px;
-    display: none;
-  } */
+  }
 
   .arrow-icon {
     width: 8vw;
