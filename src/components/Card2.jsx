@@ -45,6 +45,7 @@ export const Card2 = () => {
                     duration: 0.5,
                     ease: "easeInOut",
                 }}
+                className="pale-wrapper"
             >
                 <div className="card-pale-text">
                     {t("whyUs.using1")}

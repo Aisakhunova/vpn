@@ -279,6 +279,13 @@ html {
   justify-items: center;
 }
 
+.pale-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-pale-text{
   font-size: clamp(14px, 2vw, 18px);
   /* font-size: clamp(6px, 2vw, 18px); */
@@ -420,7 +427,6 @@ html {
 }
 
 .curtain-text{
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1087,7 +1093,16 @@ background-color: #111;
   .hero-content {
     flex-direction: column; 
     border-radius: 20px;
-    height: 80vh !important;
+    height: auto !important;
+    scrollbar-width: thin;
+  }
+
+  .hero-content::-webkit-scrollbar {
+    width: 6px;
+  }
+  .hero-content::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
   }
 
   .footer-right{
@@ -1165,7 +1180,7 @@ background-color: #111;
 
   .enjoy{
     width: 100%;
-    margin-top: 30%;
+    margin-top: 20%;
     margin-bottom: 10%;
     text-align: end;
     display: flex;
@@ -1186,6 +1201,9 @@ background-color: #111;
     margin-top: 5%;
     margin-bottom: 20px;
     text-align: center;
+    padding: 0 20px 0 20px;
+    width: 60%;
+    
   }
 
   .card-mob{
@@ -1279,7 +1297,7 @@ background-color: #111;
 
   .card1, .card2, .card3, .card4 {
     width: 90vw; 
-    max-width: none;
+    max-width: 98vw;
   }
 
   .ice-title{
