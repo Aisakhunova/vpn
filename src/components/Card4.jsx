@@ -152,7 +152,7 @@ const styles = {
     height: "100%",
   },
   title: {
-    fontSize: "clamp(34px, 4vw, 60px)",
+    fontSize: "clamp(34px, 5vw, 60px)",
     // fontSize: "clamp(14px, 4vw, 60px)",
     fontWeight: "500",
     lineHeight: "1.2",
@@ -176,7 +176,7 @@ const styles = {
   },
   btnText: {
     fontFamily: "'Raleway'",
-    fontSize: "clamp(14px, 2vw, 20px)",
+    fontSize: "clamp(14px, 5vw, 20px)",
     // fontSize: "clamp(8px, 2vw, 20px)",
     lineHeight: "20px",
     marginLeft: "10px",
@@ -189,7 +189,7 @@ const styles = {
    
     bottom: "3%",
     // fontSize: "clamp(10px, 4vw, 70px)",
-    fontSize: "clamp(20px, 6vw, 70px)",
+    fontSize: "clamp(20px, 7vw, 70px)",
   },
 };
 

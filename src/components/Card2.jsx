@@ -166,7 +166,7 @@ const styles = {
     },
     btnText: {
         fontFamily: "'Raleway', sans-serif",
-        fontSize: "clamp(14px, 2vw, 20px)",
+        fontSize: "clamp(14px, 5vw, 20px)",
         // fontSize: "clamp(8px, 2vw, 20px)",
         lineHeight: "1.2",
         marginLeft: "10px",

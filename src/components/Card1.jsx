@@ -173,7 +173,7 @@ const styles = {
     alignItems: 'center'
   },
   title: {
-    fontSize: "clamp(34px, 5vw, 60px)",
+    fontSize: "clamp(34px, 6vw, 60px)",
     // fontSize: "clamp(14px, 5vw, 60px)",
     fontWeight: "500",
     lineHeight: "1.2",
@@ -198,7 +198,7 @@ const styles = {
   },
   btnText: {
     fontFamily: "'Raleway', sans-serif",
-    fontSize: "clamp(14px, 2vw, 20px)",
+    fontSize: "clamp(14px, 5vw, 20px)",
     // fontSize: "clamp(8px, 2vw, 20px)",
     lineHeight: "1.2",
     marginLeft: "10px",
