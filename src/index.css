@@ -1087,7 +1087,7 @@ background-color: #111;
   .hero-content {
     flex-direction: column; 
     border-radius: 20px;
-    height: auto;
+    height: 80vh !important;
   }
 
   .footer-right{
