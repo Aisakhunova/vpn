@@ -163,7 +163,7 @@ const styles = {
   },
   cloudText: {
     position: "relative", // Текст поверх облака
-    // fontSize: "clamp(16px, 3vw, 24px)",
+    fontSize: "clamp(16px, 3vw, 24px)",
     fontWeight: "500",
     textAlign: "center",
     color: "white", // Цвет текста
@@ -173,8 +173,8 @@ const styles = {
     alignItems: 'center'
   },
   title: {
-    // fontSize: "clamp(34px, 5vw, 60px)",
-    fontSize: "clamp(14px, 5vw, 60px)",
+    fontSize: "clamp(34px, 5vw, 60px)",
+    // fontSize: "clamp(14px, 5vw, 60px)",
     fontWeight: "500",
     lineHeight: "1.2",
     position: "absolute",
@@ -198,8 +198,8 @@ const styles = {
   },
   btnText: {
     fontFamily: "'Raleway', sans-serif",
-    // fontSize: "clamp(14px, 2vw, 20px)",
-    fontSize: "clamp(8px, 2vw, 20px)",
+    fontSize: "clamp(14px, 2vw, 20px)",
+    // fontSize: "clamp(8px, 2vw, 20px)",
     lineHeight: "1.2",
     marginLeft: "10px",
     zIndex: "200 !important",

@@ -121,7 +121,7 @@ export const Numbers = () => {
         </section>
       ) : (
         <div id="numbers">
-                <svg className="line"  width="311" height="58" viewBox="0 0 311 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="line" viewBox="0 0 311 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_di_339_255)">
                     <path d="M0 29H287" stroke="url(#paint0_linear_339_255)" strokeWidth="10"/>
                     </g>
@@ -212,7 +212,7 @@ export const Numbers = () => {
                     </svg>
                     <div className="text">{t("whyUs.giga")}</div>
                 </div>
-                <svg className="line"  width="311" height="58" viewBox="0 0 311 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="line" viewBox="0 0 311 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_di_339_256)">
                     <path d="M311 29L24 29" stroke="url(#paint0_linear_339_256)" strokeWidth="10"/>
                     </g>
