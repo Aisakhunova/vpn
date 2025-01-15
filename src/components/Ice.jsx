@@ -29,7 +29,8 @@ export const Steps = () => {
   }, []);
 
   return (
-    <motion.section id="steps" ref={sectionRef}>
+    <motion.section ref={sectionRef}>
+      <div id="steps">
       <div className="rectangle9">
         <div className="ice-title">
           {t("steps.getStarted")}
@@ -52,12 +53,14 @@ export const Steps = () => {
             className="ice-card"
           >
             <a 
-              className="ice-btn" 
+            
               href="https://t.me/exeslam"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t("steps.click")}
+              {/* {t("steps.click")} */}
+              <div className="ice-text1" >Join with One Click</div>
+
             </a>
           </motion.div>
 
@@ -76,9 +79,12 @@ export const Steps = () => {
             className="ice-card2"
           >
             <div className="ice-chat">
-              {t("steps.chat1")} 
+              {t("steps.activate1")} 
+             
+
               <span className="green-back2">
-                {t("steps.chat2")}
+                {t("steps.activate2")}
+                
               </span>
             </div>
             <a 
@@ -87,7 +93,7 @@ export const Steps = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg
+              {/* <svg
                 width="9"
                 height="8"
                 viewBox="0 0 9 8"
@@ -101,8 +107,10 @@ export const Steps = () => {
                   d="M5.84675 0.159096L8.86126 3.61591C9.04625 3.82804 9.04625 4.17196 8.86126 4.38409L5.84675 7.8409C5.66177 8.05303 5.36185 8.05303 5.17686 7.8409C4.99188 7.62878 4.99188 7.28485 5.17686 7.07272L7.38274 4.54319L0.473684 4.54319C0.212075 4.54319 -3.75917e-07 4.29999 -3.49691e-07 4C-3.23465e-07 3.70001 0.212075 3.45681 0.473684 3.45681L7.38274 3.45681L5.17686 0.927277C4.99188 0.715149 4.99188 0.371223 5.17686 0.159096C5.36185 -0.0530314 5.66177 -0.0530313 5.84675 0.159096Z"
                   fill="white"
                 />
-              </svg>
-              {t("steps.chatBtn")}
+              </svg> */}
+              {t("steps.tap")}
+             
+
             </a>
           </motion.div>
         </div>
@@ -121,7 +129,10 @@ export const Steps = () => {
           }}
           className="ice-card-long"
         >
-          <div className="ice-long-text">{t("steps.setup")}</div>
+          <div className="ice-long-text">
+            {/* {t("steps.setup")} */}
+            Get Support Anytime
+            </div>
           <div className="long-vector">
             <img src="img/layers2.svg" alt="" />
           </div>
@@ -166,6 +177,7 @@ export const Steps = () => {
           {t("header.getAccess")}
         </motion.button>
       </a>
+      </div>
     </motion.section>
   );
 };

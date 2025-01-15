@@ -59,8 +59,9 @@ const resources = {
         chat2: "Bot",
         chatBtn: "Go chat",
         setup: "Set Up Your Secure VPN in Minutes",
-
-
+        activate1: "Activate your ",
+        activate2: "VPN",
+        tap: 'Secure your connection in minutes by tapping “Get Access”'
       },
 
       faq: {
@@ -186,6 +187,9 @@ const resources = {
           chat2: "ботом",
           chatBtn: "Перейти в чат",
           setup: "Настройте свой VPN за несколько минут",
+          activate1: "Активируйте ваш ",
+          activate2: "VPN",
+          tap: 'Защитите своё соединение за несколько минут, нажав «Получить доступ»'
         },
   
         faq: {
@@ -242,7 +246,6 @@ const resources = {
   
   
         footer: {
-  
           rights: "Все права защищены",
           why: "Почему Wraith VPN?",
           steps: "Шаги",
@@ -307,6 +310,9 @@ const resources = {
         chat2: "机器人聊天",
         chatBtn: "去聊天",
         setup: "几分钟内设置安全VPN",
+        activate1: "激活您的",
+        activate2: "VPN",
+        tap: '通过点击“获取访问”几分钟内保护您的连接'
       },
       faq: {
         title: "常见问题",
@@ -420,6 +426,9 @@ const resources = {
           chat2: "چت با ربات",
           chatBtn: "چت برو",
           setup: "VPN امن خود را در چند دقیقه راه‌اندازی کنید",
+          activate1: "فعال کنید ",
+          activate2: "VPN",
+          tap: 'اتصال خود را در عرض چند دقیقه با زدن «دسترسی بگیرید» ایمن کنید'
         },
         faq: {
           title: "سوالات متداول",

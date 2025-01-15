@@ -530,8 +530,7 @@ html {
   height: 122px;
   border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
   border-image-slice: 1; 
-  display: flex;
-  justify-content: space-between;
+
 }
 
 .ice-bubbles{
@@ -550,6 +549,13 @@ html {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+.ice-text1{
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 #ice {
@@ -596,10 +602,10 @@ html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   color: white;
   width: 49%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .ice-bubbles{
@@ -621,25 +627,20 @@ html {
 }
 
 .ice-chat{
+  font-family: 'Raleway';
   font-size: 20px;
   line-height: 20px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  margin-left: 35px;
+  margin-left: 10px;
 }
 
 .ice-chat2{
+  font-family: 'Raleway';
   font-size: 10px;
+  font-weight: 300;
   line-height: 10px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-
+  margin-left: 10px;
 }
 
 .ice-card2 {
@@ -672,14 +673,15 @@ html {
 }
 
 .ice-long-text{
-  width: 50%;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 100%;
+  width: 40%;
   color: white;
   margin-left: 35px;
+  font-family: 'Raleway';
+font-size: 20px;
+font-weight: 300;
+line-height: 20px;
+text-align: left;
+
 }
 
 .long-vector{
@@ -745,7 +747,7 @@ html {
   position: relative;
   background-color: #000000; 
   overflow: hidden; 
-  border-radius: 40px;
+  border-radius: 20px;
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
@@ -1066,6 +1068,7 @@ background-color: #111;
     margin-left: 20px;
   }
 
+
   .btn {
     bottom: 10px;
     right: 10px;
@@ -1308,7 +1311,7 @@ background-color: #111;
   }
 
   .ice-title{
-    width: 60%;
+    width: 70%;
   }
 
   .ice-cards{
@@ -1331,6 +1334,12 @@ background-color: #111;
     height: 122px !important;
     width: 90% !important;
     z-index: 1;
+    display: block;
+  }
+ 
+  .ice-text1{
+      margin-left: 10px;
+  margin-top: 20px ;
   }
 
   .ice-card2{
@@ -1353,11 +1362,13 @@ background-color: #111;
   .ice-chat2{
     justify-content: left !important;
     margin-left: 10px !important;
+    width: 60%;
   }
 
   .ice-long-text{
-    margin: 10px 0 0 10px !important;
-    width: 70% !important;
+    margin: 15px 0 0 10px !important;
+    width: 60% !important;
+    line-height: 1.2 !important;
   }
 
   .ice-btn2{
@@ -1439,13 +1450,10 @@ background-color: #111;
   #steps {
     position: relative;
     background-color: #000000;
-    border-radius: 40px;
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
     height: auto;
-    padding: 0;
-
   }
 
   .ice-cards{
