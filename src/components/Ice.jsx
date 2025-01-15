@@ -59,7 +59,7 @@ export const Steps = () => {
               rel="noopener noreferrer"
             >
               {/* {t("steps.click")} */}
-              <div className="ice-text1" >Join with One Click</div>
+              <div className="ice-text1" >{t("steps.stepsJoin")}</div>
 
             </a>
           </motion.div>
@@ -131,7 +131,7 @@ export const Steps = () => {
         >
           <div className="ice-long-text">
             {/* {t("steps.setup")} */}
-            Get Support Anytime
+            {t("steps.support")}
             </div>
           <div className="long-vector">
             <img src="img/layers2.svg" alt="" />

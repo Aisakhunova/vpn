@@ -61,7 +61,9 @@ const resources = {
         setup: "Set Up Your Secure VPN in Minutes",
         activate1: "Activate your ",
         activate2: "VPN",
-        tap: 'Secure your connection in minutes by tapping “Get Access”'
+        tap: 'Secure your connection in minutes by tapping “Get Access”',
+        stepsJoin: "Join with One Click",
+        support: "Get Support Anytime",
       },
 
       faq: {
@@ -189,7 +191,9 @@ const resources = {
           setup: "Настройте свой VPN за несколько минут",
           activate1: "Активируйте ваш ",
           activate2: "VPN",
-          tap: 'Защитите своё соединение за несколько минут, нажав «Получить доступ»'
+          tap: 'Защитите своё соединение за несколько минут, нажав «Получить доступ»',
+          stepsJoin: "Присоединяйтесь в один клик",
+          support: "Получите поддержку в любое время"
         },
   
         faq: {
@@ -312,7 +316,9 @@ const resources = {
         setup: "几分钟内设置安全VPN",
         activate1: "激活您的",
         activate2: "VPN",
-        tap: '通过点击“获取访问”几分钟内保护您的连接'
+        tap: '通过点击“获取访问”几分钟内保护您的连接',
+        stepsJoin: "一键加入",
+        support: "随时获得支持"
       },
       faq: {
         title: "常见问题",
@@ -428,7 +434,9 @@ const resources = {
           setup: "VPN امن خود را در چند دقیقه راه‌اندازی کنید",
           activate1: "فعال کنید ",
           activate2: "VPN",
-          tap: 'اتصال خود را در عرض چند دقیقه با زدن «دسترسی بگیرید» ایمن کنید'
+          tap: 'اتصال خود را در عرض چند دقیقه با زدن «دسترسی بگیرید» ایمن کنید',
+          stepsJoin: "با یک کلیک بپیوندید",
+          support: "در هر زمان پشتیبانی دریافت کنید"
         },
         faq: {
           title: "سوالات متداول",
