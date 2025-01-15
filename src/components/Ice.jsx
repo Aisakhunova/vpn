@@ -88,7 +88,7 @@ export const Steps = () => {
               </span>
             </div>
             <a 
-              className="ice-chat2" 
+              className="ice-chat2 ice-activate" 
               href="https://t.me/exeslam"
               target="_blank"
               rel="noopener noreferrer"

@@ -323,7 +323,7 @@ html {
 
 .bubble-text{
   z-index: 30;
-  font-size: clamp(5px, 4vw, 25px);
+  font-size: 100%;
   /* font-size: clamp(5px, 2vw, 25px); */
   font-family: 'Raleway';
   font-weight: 500;
@@ -398,9 +398,9 @@ html {
 
 .card4-text{
   font-family: 'Raleway';
-  font-size: clamp(20px, 3vw, 35px);
+  font-size: clamp(20px, 2vw, 35px);
   /* font-size: clamp(10px, 3vw, 35px); */
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 1.1;
   text-align: left;
   margin-left: 35px;
@@ -553,10 +553,10 @@ html {
 
 .ice-text1{
   font-family: 'Raleway';
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 300;
-  line-height: 20px;
-  padding: 10px;
+  line-height: 1.2;
+  padding: 0 10px;
 }
 
 #ice {
@@ -629,17 +629,16 @@ html {
 
 .ice-chat{
   font-family: 'Raleway';
-  font-size: 20px;
-  line-height: 20px;
-  text-align: left;
+  font-size: 25px;
+  line-height: 1.2;
   margin-left: 10px;
 }
 
 .ice-chat2{
   font-family: 'Raleway';
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 300;
-  line-height: 10px;
+  line-height: 1.2;
   text-align: left;
   margin-left: 10px;
 }
@@ -678,9 +677,9 @@ html {
   color: white;
   margin-left: 35px;
   font-family: 'Raleway';
-font-size: 20px;
+font-size: 25px;
 font-weight: 300;
-line-height: 20px;
+line-height: 1.2;
 text-align: left;
 
 }
@@ -1338,10 +1337,6 @@ background-color: #111;
     display: block;
   }
  
-  .ice-text1{
-      margin-left: 10px;
-  margin-top: 20px ;
-  }
 
   .ice-card2{
     height: 122px !important;
@@ -1357,7 +1352,7 @@ background-color: #111;
 
   .ice-chat{
     margin-left: 10px !important;
-
+    font-size: 25px
   }
 
   .ice-chat2{
@@ -1370,6 +1365,8 @@ background-color: #111;
     margin: 15px 0 0 10px !important;
     width: 60% !important;
     line-height: 1.2 !important;
+    font-size: 25px;
+    z-index: 15;
   }
 
   .ice-btn2{
@@ -1520,6 +1517,29 @@ background-color: #111;
   .cards{
     align-items: center;
     justify-content: center;
+  }
+
+  .ice-text1{
+    margin-top: 15px ;
+    }
+
+  .ice-activate{
+    display: none;
+  }
+
+  .ice-card{
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .ice-card2{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .ice-chat{
+    margin-top: 15px;
   }
 }
 

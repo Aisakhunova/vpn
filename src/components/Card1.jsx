@@ -173,7 +173,7 @@ const styles = {
     alignItems: 'center'
   },
   title: {
-    fontSize: "clamp(34px, 6vw, 60px)",
+    fontSize: "clamp(34px, 5vw, 60px)",
     // fontSize: "clamp(14px, 5vw, 60px)",
     fontWeight: "500",
     lineHeight: "1.2",
@@ -181,6 +181,7 @@ const styles = {
     top: "10%",
     left: "5%",
     maxWidth: "90%",
+    zIndex: 20,
   },
   btn: {
     position: "absolute",
