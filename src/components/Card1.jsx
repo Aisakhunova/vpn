@@ -110,7 +110,7 @@ const Card1 = () => {
         <div style={styles.cloudVector}>Hola cepasa</div>
       </motion.div> */}
       <a    
-        href="https://t.me/exeslam"
+        href="https://t.me/dev_wraithvpnbot"
         target="_blank"
         rel="noopener noreferrer"
         className="card-btn"

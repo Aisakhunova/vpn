@@ -81,10 +81,10 @@ const Header = () => {
             
             <li>
               <a 
-              className="startButton header-btn for-mb nowrap"  
-              href="https://t.me/exeslam"
-              target="_blank"
-              rel="noopener noreferrer"
+                className="startButton header-btn for-mb nowrap"  
+                href="https://t.me/dev_wraithvpnbot"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {t("header.getAccess")}
               </a>
@@ -94,7 +94,7 @@ const Header = () => {
       </motion.nav>
       <a
         className="startButton header-btn for-lg nowrap"
-        href="https://t.me/exeslam"
+        href="https://t.me/dev_wraithvpnbot"
         target="_blank"
         rel="noopener noreferrer"
       >
