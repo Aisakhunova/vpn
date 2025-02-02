@@ -44,7 +44,7 @@ const resources = {
         noData: "No data caps, no throttling.",
         experience: "Enjoy an unrestricted internet experience",
         max: "max",
-        cloudText: "Say goodbye to geo-blocks"
+        cloudText: "Say goodbye to geo-blocks"
       },
 
       curtain: {
