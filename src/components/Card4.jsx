@@ -100,7 +100,7 @@ const Card4 = () => {
 
       <a
         className="card-btn"
-        href="https://t.me/exeslam"
+        href="https://t.me/dev_wraithvpnbot"
         target="_blank"
         rel="noopener noreferrer"
       >
