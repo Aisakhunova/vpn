@@ -13,7 +13,7 @@ export const Privacy = () => {
             </div>
             <a 
                 className='header-btn privacy-button' 
-                href="https://t.me/exeslam"
+                href="https://t.me/dev_wraithvpnbot"
                 target="_blank"
                 rel="noopener noreferrer"
             >

@@ -53,8 +53,7 @@ export const Steps = () => {
             className="ice-card"
           >
             <a 
-            
-              href="https://t.me/exeslam"
+              href="https://t.me/dev_wraithvpnbot"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -89,7 +88,7 @@ export const Steps = () => {
             </div>
             <a 
               className="ice-chat2 ice-activate" 
-              href="https://t.me/exeslam"
+              href="https://t.me/dev_wraithvpnbot"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -156,7 +155,7 @@ export const Steps = () => {
       </motion.div>
 
       <a
-        href="https://t.me/exeslam"
+        href="https://t.me/dev_wraithvpnbot"
         target="_blank"
         rel="noopener noreferrer" 
       >

@@ -760,6 +760,7 @@ text-align: left;
   color: #17FFB2;
   background-color: white;
   padding: 10px 20px;
+  cursor: pointer;
   gap: 10px;
   border-radius: 100px;
   opacity: 0px;

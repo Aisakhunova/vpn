@@ -69,7 +69,7 @@ export const Curtain = () => {
           }}
         ></motion.div>
 
-<motion.h1
+        <motion.h1
           className="main-text"
           variants={{
             hover: {
@@ -99,7 +99,7 @@ export const Curtain = () => {
   transition={!isMobile ? { duration: 0.3 } : null}
 >
   <a 
-    href="https://t.me/exeslam"
+    href="https://t.me/dev_wraithvpnbot"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -132,9 +132,11 @@ export const Curtain = () => {
   </motion.div>
 </motion.div> */}
 
-<motion.div
+        <motion.a
           className="inner-container curtain-text"
-          initial={{ opacity: 1, y: -500 }} // начальная позиция
+          href="https://t.me/dev_wraithvpnbot"
+          target="_blank"
+          initial={{ opacity: 1, y: -500 }} 
           variants={{
             hover: {
               y: 0,
@@ -169,7 +171,7 @@ export const Curtain = () => {
             />
           </svg>
         </motion.div>
-        </motion.div>
+        </motion.a>
       </motion.div>
     </motion.div>
   );

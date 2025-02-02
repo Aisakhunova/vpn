@@ -56,9 +56,27 @@ const Contact = () => {
                 </svg>
               </div>
             </div>
-            <div className="footer-text text-gray2">{t("footer.terms")}</div>
-            <div className="footer-text text-gray2">{t("footer.privacy")}</div>
-            <div className="footer-text text-gray2">{t("footer.refund")}</div>
+            <a 
+              className="footer-text text-gray2" 
+              href="https://t.me/dev_wraithvpnbot"
+              target="_blank"
+            >
+              {t("footer.terms")}
+            </a>
+            <a 
+              className="footer-text text-gray2"
+              href="https://t.me/dev_wraithvpnbot"
+              target="_blank"
+            >
+              {t("footer.privacy")}
+            </a>
+            <a 
+              className="footer-text text-gray2"
+              href="https://t.me/dev_wraithvpnbot"
+              target="_blank"
+            >
+              {t("footer.refund")}
+            </a>
           </div>
         </div>
       </div>
