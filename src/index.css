@@ -1560,7 +1560,6 @@ background-color: #111;
   margin: 0 !important;
 }
 
-
 @media (max-width: 860px) {
   .header, section, .container, .outer-container, #ice, #secIce, .choose-title {
     padding: 10px;
@@ -1593,7 +1592,8 @@ background-color: #111;
 }
 
 
-.header, section, .container, .outer-container, #ice, #secIce , .choose-title{
+@media (max-width: 1240px){
+  .header, section, .container, .outer-container, #ice, #secIce , .choose-title{
   padding: 10px;
   max-width: 100%;
   box-sizing: border-box;
@@ -1601,4 +1601,6 @@ background-color: #111;
 
 .header nav ul {
   padding: 20px;
+}
+
 }
