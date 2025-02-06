@@ -192,6 +192,7 @@ html {
 
 .mTop{
   margin-top: 15px;
+  margin-bottom: 40px;
 }
 
 .startButton{
@@ -519,7 +520,7 @@ html {
   font-weight: 500;
   line-height: 1.2;
   text-align: left;
-  margin: 68px 0 10px 43px
+  margin: 68px 0 10px 40px
 }
 
 .ice-card {
@@ -675,7 +676,7 @@ html {
 .ice-long-text{
   width: 40%;
   color: white;
-  margin-left: 35px;
+  margin-left: 10px;
   font-family: 'Raleway';
 font-size: 25px;
 font-weight: 300;
@@ -1069,7 +1070,6 @@ background-color: #111;
     margin-left: 20px;
   }
 
-
   .btn {
     bottom: 10px;
     right: 10px;
@@ -1155,6 +1155,11 @@ background-color: #111;
     text-align: right;
   }
 
+  .card1, .card2, .card3, .card4 {
+    width: 90vw; 
+    max-width: 98vw;
+  }
+
   body{
     padding: 0;
   }
@@ -1162,6 +1167,7 @@ background-color: #111;
   .title {
     font-size: 40px; 
     width: 100%; 
+    margin-top: 3vw;
   }
 
   .title-desktop{
@@ -1306,11 +1312,6 @@ background-color: #111;
     width: 4vw; 
   }
 
-  .card1, .card2, .card3, .card4 {
-    width: 90vw; 
-    max-width: 98vw;
-  }
-
   .ice-title{
     width: 70%;
   }
@@ -1318,8 +1319,8 @@ background-color: #111;
   .ice-cards{
     flex-direction: column; 
     width: 90% !important;
-    padding: 20px 20px 0 20px !important;
-    margin: 0 !important;
+    padding: 20px 20px 0 0 !important;
+    /* margin: 0 !important; */
     gap: 10px;
     z-index: 1;
     position: relative;
@@ -1368,10 +1369,6 @@ background-color: #111;
     line-height: 1.2 !important;
     font-size: 25px;
     z-index: 15;
-  }
-
-  .ice-btn2{
-    margin: 30px 20px 20px !important;
   }
 
   .faq-answer{
@@ -1561,4 +1558,47 @@ background-color: #111;
 
 .slick-dots li{
   margin: 0 !important;
+}
+
+
+@media (max-width: 860px) {
+  .header, section, .container, .outer-container, #ice, #secIce, .choose-title {
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header nav ul li {
+    margin: 10px 0;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ice-card, .ice-card2, .ice-card-long {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .arrow-icon, .long-vector {
+    display: none; /* Скрытие элементов, если они мешают */
+  }
+}
+
+
+.header, section, .container, .outer-container, #ice, #secIce , .choose-title{
+  padding: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.header nav ul {
+  padding: 20px;
 }
